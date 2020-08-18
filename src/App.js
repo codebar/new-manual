@@ -19,6 +19,7 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/sponsors" component={Sponsors} />
             <Route path="/organisers" component={Organisers} />
+            <Route path="/organisers" component={Organisers} />
             <Route path="/mailing" component={Mailing} />
           </Switch>
         </BrowserRouter>
