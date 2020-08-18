@@ -1,25 +1,24 @@
 import React from 'react';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import GlobalStyle from './globalstyle/GlobalStyle';
+import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
+import Sponsors from "./components/Sponsors/Sponsors";
+
 
 function App() {
   return (
-    <GlobalStyle>
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    </GlobalStyle>
+    <>
+      <GlobalStyle>
+        <BrowserRouter>
+          <Navbar />
+          <Switch>
+            <Route path="/about" component={About} exact={true} />
+            <Route path="/sponsors" component={Sponsors} />
+          </Switch>
+        </BrowserRouter>
+      </GlobalStyle>
+    </>
   );
 }
 
