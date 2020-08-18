@@ -4,7 +4,9 @@ import GlobalStyle from './globalstyle/GlobalStyle';
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Sponsors from "./components/Sponsors/Sponsors";
-
+import Landing from "./components/Landing/Landing";
+import Mailing from "./components/MailingList/MailingList";
+import Organisers from "./components/Organisers/Organisers";
 
 function App() {
   return (
@@ -13,8 +15,11 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Switch>
-            <Route path="/about" component={About} exact={true} />
+            <Route path="/" component={Landing} exact={true} />
+            <Route path="/about" component={About} />
             <Route path="/sponsors" component={Sponsors} />
+            <Route path="/organisers" component={Organisers} />
+            <Route path="/mailing" component={Mailing} />
           </Switch>
         </BrowserRouter>
       </GlobalStyle>
