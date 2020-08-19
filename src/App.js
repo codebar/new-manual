@@ -8,6 +8,7 @@ import Landing from './components/Landing/Landing';
 import Mailing from './components/MailingList/MailingList';
 import Organisers from './components/Organisers/Organisers';
 import Coordinators from './components/Coordinators/Coordinators';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/mailing" component={Mailing} />
           </Switch>
         </BrowserRouter>
+        <Footer />
       </GlobalStyle>
     </>
   );

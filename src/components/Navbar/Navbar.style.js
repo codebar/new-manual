@@ -22,11 +22,10 @@ const DonateLink = styled.a`
   background-color: #4bafff;
   color: white;
   border-radius: 50px;
-  padding: 0.35rem 1rem;
+  padding: 0.35rem 1rem 0.45rem 1rem;
   max-width: 6rem;
-  text-align: center;
   letter-spacing: 0.025rem;
-  // text-transform: uppercase;
+  text-transform: uppercase;
 `;
 
 const MenuLink = styled(Link)`
@@ -43,6 +42,7 @@ const Nav = styled.nav`
   align-items: center;
   font-size: 1.15rem;
   color: ${COLORS.green};
+  text-align: center;
 `;
 
 export { Logo, Nav, MenuLink, ExternalLink, DonateLink };

@@ -5,6 +5,7 @@ const GlobalStyle = styled.body`
   font-family: open sans;
   padding: 0;
   margin: 0;
+  color: #1f1f1f;
 `;
 
 const primaryDarkgreyColor = 'rgba(67, 78, 89, 1)';
