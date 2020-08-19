@@ -17,14 +17,16 @@ const ExternalLink = styled.a`
   color: #4bafff;
 `;
 
-const DonateButton = styled.a`
+const DonateLink = styled.a`
   ${textDecoration}
   background-color: #4bafff;
   color: white;
   border-radius: 50px;
-  padding: 0.75rem;
+  padding: 0.35rem 1rem;
   max-width: 6rem;
   text-align: center;
+  letter-spacing: 0.025rem;
+  // text-transform: uppercase;
 `;
 
 const MenuLink = styled(Link)`
@@ -43,4 +45,4 @@ const Nav = styled.nav`
   color: ${COLORS.green};
 `;
 
-export { Logo, Nav, MenuLink, ExternalLink, DonateButton };
+export { Logo, Nav, MenuLink, ExternalLink, DonateLink };

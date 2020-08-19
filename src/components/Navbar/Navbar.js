@@ -1,12 +1,6 @@
 import React from 'react';
-import logo from './logo.png';
-import {
-  Nav,
-  Logo,
-  MenuLink,
-  ExternalLink,
-  DonateButton,
-} from './Navbar.style';
+import logo from '../../assets/image/logo.png';
+import { Nav, Logo, MenuLink, ExternalLink, DonateLink } from './Navbar.style';
 
 const Navbar = () => {
   return (
@@ -32,13 +26,13 @@ const Navbar = () => {
         codebar.io
       </ExternalLink>
 
-      <DonateButton
+      <DonateLink
         href="https://codebar.enthuse.com/donate/#!/"
         className="Donate"
         target="_blank"
       >
         Donate
-      </DonateButton>
+      </DonateLink>
     </Nav>
   );
 };
