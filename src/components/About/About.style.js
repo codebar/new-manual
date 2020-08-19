@@ -3,6 +3,7 @@ import { GlobalStyle } from '../../globalstyle/GlobalStyle';
 
 
 const darkGray = '#808080';
+const black = '#000000';
 
 
 const Heading = styled.h1`
@@ -14,6 +15,12 @@ const Subheading = styled.p`
     color: ${darkGray};
     font-weight: lighter;
     font-size: 1.5rem
+`
+
+const p = styled.p`
+    font-family: ${GlobalStyle};
+    color: ${black};
+    font-size: 1.4rem;
 `
 
 
