@@ -25,7 +25,7 @@ const Introtext  = styled.div`
     max-width: 80%;
 `
 
-const p = styled.p`
+const VolunteerText = styled.p`
     font-family: ${GlobalStyle};
     color: ${black};
     font-size: 1.4rem;
@@ -39,28 +39,59 @@ const Img = styled.img`
 
 const Contentwrapper = styled.div`
     display: grid;
-    grid-auto-flow: column;
-    margin: 6rem 2rem 3rem 4rem;
-    grid-template-columns: 800px 1000px;
-    grid-column-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "Img Text"
+        "TextAlt TextAlt";
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
     align-items: center;
+    grid-column-gap: 10px;
 `
 
-const Contenttext = styled.p`
+const ContentwrapperAlt = styled.div`
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "Img Text"
+   
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    align-items: center;
+    grid-column-gap: 10px;
+`
+
+
+const Text = styled.p`
     font-size: 1.4rem;
     text-align: right;
-    max-width: 400px;
-    font-weight: lighter;
     line-height: 1.7;
+    width: 400px;
+
+`
+const SponsorText = styled.p`
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.7;
+    width: 600px;
 `
 
-
-const ContenttextAlt = styled.p`
+const TextAlt = styled.p`
     font-size: 1.4rem;
-    max-width: 600px;
-    font-weight: lighter;
+    width: 80vw;
+    font-weight: normal;
     line-height: 1.7;
     text-align: right;
+    grid-area: TextAlt;
+    margin-left: 10rem;
+    margin-top: 2rem;
 `
 
-export {Heading, Subheading, Img, Introtext, p, Contentwrapper, Contenttext, ContenttextAlt };
+const TextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+export {Heading, Subheading, Img, Introtext, VolunteerText , Contentwrapper, Text, TextAlt, ContentwrapperAlt, SponsorText, TextWrapper };
