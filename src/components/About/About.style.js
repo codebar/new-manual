@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import { GlobalStyle } from '../../globalstyle/GlobalStyle';
 
+const Wrapper = styled.body`
+    margin: 0;
+    padding:0;
+`
 
 const darkGray = '#808080';
+const lightGray = '#F7F7F7';
 const black = '#000000';
 
 
@@ -10,6 +15,7 @@ const Heading = styled.h1`
     font-family: ${GlobalStyle};
     margin-left: 4rem;
     line-height: 1.5;
+    font-size: 4rem;
 `
 
 const Subheading = styled.p`
@@ -54,8 +60,7 @@ const ContentwrapperAlt = styled.div`
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 
-        "Img Text"
-   
+        "Img Text";
     margin-top: 6rem;
     margin-bottom: 4rem;
     margin-left: 2rem;
@@ -94,4 +99,20 @@ const TextWrapper = styled.div`
     flex-direction: column;
 `
 
-export {Heading, Subheading, Img, Introtext, VolunteerText , Contentwrapper, Text, TextAlt, ContentwrapperAlt, SponsorText, TextWrapper };
+const SubheadingAlt = styled.h2`
+    color: ${black};
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 4rem;
+    margin: 0 auto;
+`
+
+const HowtoHelpWrapper = styled.div`
+    background-color: ${lightGray};
+    height: 40vh;
+    width: 100%;
+    margin: 0 auto;
+`
+
+export { Heading, Subheading, Img, Introtext, VolunteerText , Contentwrapper, Text, TextAlt, ContentwrapperAlt, SponsorText, TextWrapper, SubheadingAlt, HowtoHelpWrapper, Wrapper };
