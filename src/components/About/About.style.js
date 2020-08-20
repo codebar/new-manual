@@ -31,6 +31,9 @@ const Subheading = styled.p`
 
 const Introtext  = styled.div`
     max-width: 80%;
+    @media (max-width: 400px) {
+        max-width: 900px;
+        }
 `
 
 const VolunteerText = styled.p`
@@ -40,9 +43,13 @@ const VolunteerText = styled.p`
 `
 
 const Img = styled.img`
-    height: 491px;
-    width: 675px;
+    height: 50%;
+    width: 75%;
     border-radius: 40%;
+    @media screen (max-width: 400px) {
+        width: 30%;
+        height: 30%;
+        }
 `
 
 const Contentwrapper = styled.div`
@@ -51,9 +58,6 @@ const Contentwrapper = styled.div`
     grid-template-areas: 
         "Img Text"
         "TextAlt TextAlt";
-    margin-top: 6rem;
-    margin-bottom: 4rem;
-    margin-left: 2rem;
     align-items: center;
     grid-column-gap: 10px;
 `

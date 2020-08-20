@@ -6,10 +6,7 @@ const darkGrayAlt = '#3D4A54';
 
 const ButtonA = styled(Link)`
     background-color: ${darkGrayAlt};
-    padding-top: 15px;
-    padding-bottom: 0;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding: 15px 1.5rem 0 1.5rem;
     width: 8.5rem;
     color: white;
     text-decoration: none; 
@@ -18,10 +15,7 @@ const ButtonA = styled(Link)`
 `
 const ButtonB = styled(Link)`
     background-color: ${darkGrayAlt};
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 1.5rem 0 1.5rem;
     width: 8.5rem;
     color: white;
     text-decoration: none; 
