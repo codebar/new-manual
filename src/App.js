@@ -9,7 +9,6 @@ import Mailing from './components/MailingList/MailingList';
 import Organisers from './components/Organisers/Organisers';
 import Coordinators from './components/Coordinators/Coordinators';
 import Footer from './components/Footer/Footer';
-
 function App() {
   return (
     <>

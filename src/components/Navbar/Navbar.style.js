@@ -33,16 +33,26 @@ const MenuLink = styled(Link)`
   color: black;
 `;
 
-const Nav = styled.nav`
+const Nav = styled.nav.attrs((props) => ({
+  className: props.className,
+}))`
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas: 'Logo Logo Logo about sponsors organisers donate codebar';
-  margin: 1.5rem 1rem;
+  margin: 1.5rem 4rem;
   align-items: center;
   font-size: 1.15rem;
   color: ${COLORS.green};
   text-align: center;
+
+  & .logoContainer {
+    text-align: left;
+  }
+
+  & .logo {
+    width: 10rem;
+  }
 `;
 
 export { Logo, Nav, MenuLink, ExternalLink, DonateLink };
