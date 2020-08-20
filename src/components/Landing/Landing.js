@@ -19,6 +19,8 @@ import {
   ImageWrapper,
   ValuesBold,
 } from './Landing.style';
+import HowToHelp from '../HowToHelp/HowToHelp';
+
 import arrow from '../../assets/image/down-arrow.svg';
 
 const Landing = () => {
@@ -146,6 +148,8 @@ const Landing = () => {
           <Statistic>42.98%</Statistic>
         </StatWrapper>
       </StatsWrapper>
+
+      <HowToHelp />
     </LandingWrapper>
   );
 };
