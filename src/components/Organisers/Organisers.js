@@ -1,5 +1,5 @@
 import React from "react";
-import {Wrapper, IntroText, AnythingElseWrapper, EventWrapper, OtherInfoWrapper } from './Organisers.style'
+import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, OtherInfoWrapper, Heading, Subheading, SubheadingAlt } from './Organisers.style'
 
 
 const Organisers = () => {
@@ -7,9 +7,9 @@ const Organisers = () => {
     return (
         <>
             <Wrapper>
-                <h1>Organising workshops</h1>
+                <Heading>Organising workshops</Heading>
                 <IntroText>
-                    <h2>What do I need from a host?</h2>
+                    <Subheading>What do I need from a host?</Subheading>
                     <h3> Space</h3>
                     <p>The requirements are different depending on the city. A workshop can be as small as 5-6 people or as big as 80 - or more if you have enough people helping out! Just make sure that the venue details are configured properly in the application before you send out any invitations.</p>
 
@@ -24,18 +24,19 @@ const Organisers = () => {
 
                 <AnythingElseWrapper>
                     <h3>Anything else?</h3>
-                    <p>Students and coaches We aim to have double the amount of students to coaches, and try to pair up 2 students who are working on the same tutorial with their assigned coach.</p>
 
-                    <p>Food and drinks Learning to code after a long day at work can be hard. Offering free food and giving people the opportunity to take a break and have something to eat before getting started makes our events more effective and accessible. You should also ask for vegetarian, vegan, and gluten-free options and also non-alcoholic drinks. The effort is minimal and then everyone can have something to eat. If you are stuck, ask us for suggestions!</p>
+                    <AnythingElseText>Students and coaches We aim to have double the amount of students to coaches, and try to pair up 2 students who are working on the same tutorial with their assigned coach.</AnythingElseText>
 
-                    <p>Not all companies are able to provide both space and food. If you need help finding a sponsor let us know.</p>
+                    <AnythingElseText>Food and drinks Learning to code after a long day at work can be hard. Offering free food and giving people the opportunity to take a break and have something to eat before getting started makes our events more effective and accessible. You should also ask for vegetarian, vegan, and gluten-free options and also non-alcoholic drinks. The effort is minimal and then everyone can have something to eat. If you are stuck, ask us for suggestions!</AnythingElseText>
+
+                    <AnythingElseText>Not all companies are able to provide both space and food. If you need help finding a sponsor let us know.</AnythingElseText>
 
                     <h4>Announcing workshops and sending out invitations</h4>
-                    <p>You should aim to list your events at least a week before they take place to give people time to learn about and sign up to the event. Give a longer lead time for new chapters. When creating an event, you should make sure to not set it as invitable unless registrations are open.</p>
+                    <AnythingElseText>You should aim to list your events at least a week before they take place to give people time to learn about and sign up to the event. Give a longer lead time for new chapters. When creating an event, you should make sure to not set it as invitable unless registrations are open.</AnythingElseText>
 
-                    <p>Anyone signed up to codebar will be able to RSVP to the event through the workshop page but only people subscribed to your chapter will receive an email invitation.</p>
+                    <AnythingElseText>Anyone signed up to codebar will be able to RSVP to the event through the workshop page but only people subscribed to your chapter will receive an email invitation.</AnythingElseText>
 
-                    <p>A few days out from the event, review the list of students for first-time attendees (anyone with a paw icon next to their name), and look for those with male pronouns or masculine-associated names. See if you can find their social media profile and check whether they meet the eligibility criteria. If you’re not able to find any information to indicate that they do meet the eligibility criteria, click the ‘Eligibility’ button on their profile to send out an automated eligibility check email. If they confirm that they’re eligible, add a note to their profile so that you don’t have to do this again. If they don’t respond by midday on the day of the workshop, it’s up to you whether you have a chat to them at the workshop or just remove them from the list.</p>
+                    <AnythingElseText>A few days out from the event, review the list of students for first-time attendees (anyone with a paw icon next to their name), and look for those with male pronouns or masculine-associated names. See if you can find their social media profile and check whether they meet the eligibility criteria. If you’re not able to find any information to indicate that they do meet the eligibility criteria, click the ‘Eligibility’ button on their profile to send out an automated eligibility check email. If they confirm that they’re eligible, add a note to their profile so that you don’t have to do this again. If they don’t respond by midday on the day of the workshop, it’s up to you whether you have a chat to them at the workshop or just remove them from the list.</AnythingElseText>
                 </AnythingElseWrapper>
 
                 <EventWrapper>
