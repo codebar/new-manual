@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import { GlobalStyle } from './globalstyle/GlobalStyle';
+import GlobalStyle from './globalstyle/GlobalStyle';
 import Navbar from './components/Navbar/Navbar';
 import About from './components/About/About';
 import Sponsors from './components/Sponsors/Sponsors';
@@ -8,6 +8,7 @@ import Landing from './components/Landing/Landing';
 import Mailing from './components/MailingList/MailingList';
 import Organisers from './components/Organisers/Organisers';
 import Coordinators from './components/Coordinators/Coordinators';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/mailing" component={Mailing} />
           </Switch>
         </BrowserRouter>
+        <Footer />
       </GlobalStyle>
     </>
   );
