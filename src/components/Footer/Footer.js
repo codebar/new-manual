@@ -3,7 +3,10 @@ import {
   FooterWrapper,
   FooterEmail,
   FooterSocials,
+  FooterTextWrapper,
+  FooterImg,
   FooterText,
+  FooterLink,
 } from './Footer.style';
 import twitter from '../../assets/image/twitter-logo.svg';
 import slack from '../../assets/image/slack-logo.svg';
@@ -12,19 +15,29 @@ import github from '../../assets/image/github-logo.svg';
 const Footer = () => {
   return (
     <FooterWrapper>
-      <FooterText>
-        <p>send us email at</p>
-        <FooterEmail href="mailto:hello@codebar.io">
+      <FooterTextWrapper>
+        <FooterText>send us email at</FooterText>
+        <FooterEmail className="email" href="mailto:hello@codebar.io">
           hello@codebar.io
         </FooterEmail>
-        <p>Registered UK and Wales charity no. 1187776</p>
-        <p>© 2020 codebar</p>
-      </FooterText>
+        <FooterText className="charityNo">
+          Registered UK and Wales charity no. 1187776
+        </FooterText>
+        <FooterText>© 2020 codebar</FooterText>
+      </FooterTextWrapper>
       <FooterSocials>
-        <img src={slack} />
-        <img src={twitter} />
-        <img src={facebook} />
-        <img src={github} />
+        <FooterLink href="https://slack.codebar.io/" target="_blank">
+          <FooterImg src={slack} art="slack-logo" />
+        </FooterLink>
+        <FooterLink href="https://github.com/codebar" target="_blank">
+          <FooterImg src={github} alt="github-logo" />
+        </FooterLink>
+        <FooterLink href="https://twitter.com/codebar" target="_blank">
+          <FooterImg src={twitter} alt="twitter-logo" />
+        </FooterLink>
+        <FooterLink href="https://www.facebook.com/codebarHQ" target="_blank">
+          <FooterImg src={facebook} alt="facebook-logo" />
+        </FooterLink>
       </FooterSocials>
     </FooterWrapper>
   );
