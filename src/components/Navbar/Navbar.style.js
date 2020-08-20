@@ -40,7 +40,7 @@ const Nav = styled.nav.attrs((props) => ({
   grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas: 'Logo Logo Logo about sponsors organisers donate codebar';
-  margin: 1.5rem 4rem;
+  padding: 1.5rem 4rem;
   align-items: center;
   font-size: 1.15rem;
   color: ${COLORS.green};

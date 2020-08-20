@@ -20,22 +20,24 @@ const HeaderText = styled.h1`
   line-height: 2.5rem;
 `;
 
+const HeaderImg = styled.img`
+  display: inline;
+  width: 1rem;
+`;
 const LandingSubtitles = styled.h2`
   ${fontWeight}
   font-size: 2.5rem;
 `;
 
-const HeaderImg = styled.div``;
-
 const LearnMore = styled.button`
-  ${fontWeight}
   font-size: 1.25rem;
-  margin: 1.5rem 0;
   border: none;
   background-color: transparent;
-  padding: 0;
+  margin: 3rem 0;
+  padding: 0.75rem 1.2rem;
   display: block;
   cursor: pointer;
+  ${fontWeight}
 `;
 
 const StatsWrapper = styled.section`

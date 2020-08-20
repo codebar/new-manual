@@ -19,6 +19,7 @@ import {
   ImageWrapper,
   ValuesBold,
 } from './Landing.style';
+import arrow from '../../assets/image/down-arrow.svg';
 
 const Landing = () => {
   const ref = useRef();
@@ -35,9 +36,12 @@ const Landing = () => {
         <HeaderText>
           codebar is a registered charity that facilitates the growth of a
           diverse tech community by running regular programming workshops.
-          <LearnMore onClick={executeScroll}>Learn more</LearnMore>
+          <LearnMore onClick={executeScroll}>
+            Learn more
+            <HeaderImg src={arrow} />
+          </LearnMore>
         </HeaderText>
-        <HeaderImg>placeholder image</HeaderImg>
+        <HeaderImg />
       </HeaderWrapper>
 
       <ValueContainer className="valueSection">
