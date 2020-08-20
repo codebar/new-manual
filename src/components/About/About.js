@@ -1,5 +1,6 @@
 import React from 'react';
-import { Heading, Subheading, VolunteerText, Img, Contentwrapper, ContentwrapperAlt, Text, TextAlt, SponsorText, TextWrapper, SubheadingAlt, HowtoHelpWrapper, Wrapper } from './About.style';
+import { Heading, Subheading, VolunteerText, Img, Contentwrapper, ContentwrapperAlt, Text, TextAlt, SponsorText, TextWrapper, SubheadingAlt, HowtoHelpWrapper, Wrapper} from './About.style';
+import { ButtonA, ButtonB } from '../Buttons/Button.style';
 // import { uncodebar } from '../../assets/uncodebar-5.jpeg';
 
 const About = () => {
@@ -42,6 +43,9 @@ const About = () => {
 
             <HowtoHelpWrapper>
                 <SubheadingAlt>How can you help?</SubheadingAlt>  
+                <ButtonA to='/sponsors'>Sponsors </ButtonA>
+                <ButtonB to='/organisers'>Organisers</ButtonB> 
+                
             </HowtoHelpWrapper>  
         </Wrapper>
         </>

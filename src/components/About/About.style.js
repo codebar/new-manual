@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 import { GlobalStyle } from '../../globalstyle/GlobalStyle';
 
+
 const Wrapper = styled.body`
     margin: 0;
     padding:0;
 `
 
 const darkGray = '#808080';
+const darkGrayAlt = '#3D4A54';
 const lightGray = '#F7F7F7';
 const black = '#000000';
 
@@ -106,6 +108,7 @@ const SubheadingAlt = styled.h2`
     text-align: center;
     padding-top: 4rem;
     margin: 0 auto;
+    grid-area: SubheadingAlt;
 `
 
 const HowtoHelpWrapper = styled.div`
@@ -113,6 +116,16 @@ const HowtoHelpWrapper = styled.div`
     height: 40vh;
     width: 100%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 38px 20px;
+    grid-template-areas: 
+        'SubheadingAlt SubheadingAlt SubheadingAlt SubheadingAlt'
+        '. ButtonA ButtonB .'
+        '. . . .';
 `
 
-export { Heading, Subheading, Img, Introtext, VolunteerText , Contentwrapper, Text, TextAlt, ContentwrapperAlt, SponsorText, TextWrapper, SubheadingAlt, HowtoHelpWrapper, Wrapper };
+
+
+export { Heading, Subheading, Img, Introtext, VolunteerText , Contentwrapper, Text, TextAlt, ContentwrapperAlt, SponsorText, TextWrapper, SubheadingAlt, HowtoHelpWrapper, Wrapper, darkGrayAlt };
