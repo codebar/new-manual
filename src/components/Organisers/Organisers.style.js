@@ -18,7 +18,9 @@ const Heading = styled.h1`
     font-weight: 600;
     text-align: center;
     margin-bottom: 4rem;
-    
+        @media screen and (max-width:400px){
+            font-size: 2rem;
+        }
 `
 
 const Subheading = styled.h2`
@@ -48,6 +50,12 @@ const EventWrapper = styled.div`
     margin-top: 2rem;
 `
 
+const EventList = styled.ul`
+    list-style-type: circle;
+`
+
+
+
 const OtherInfoWrapper = styled.div`
     color: ${black};
     background-color: ${lightGrey};
@@ -65,4 +73,6 @@ export {
     OtherInfoWrapper, 
     Heading, 
     Subheading, 
-    SubheadingAlt};
+    SubheadingAlt,
+    EventList
+};
