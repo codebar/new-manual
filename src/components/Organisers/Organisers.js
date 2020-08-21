@@ -1,5 +1,5 @@
 import React from "react";
-import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList} from './Organisers.style'
+import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold} from './Organisers.style'
 
 
 const Organisers = () => {
@@ -23,11 +23,11 @@ const Organisers = () => {
                 </IntroText>
 
                 <GreyWrapper>
-                    <h3>Anything else?</h3>
+                    <Subheading>Anything else?</Subheading>
 
-                    <AnythingElseText>Students and coaches We aim to have double the amount of students to coaches, and try to pair up 2 students who are working on the same tutorial with their assigned coach.</AnythingElseText>
+                    <AnythingElseText><Bold>Students and coaches</Bold> We aim to have double the amount of students to coaches, and try to pair up 2 students who are working on the same tutorial with their assigned coach.</AnythingElseText>
 
-                    <AnythingElseText>Food and drinks Learning to code after a long day at work can be hard. Offering free food and giving people the opportunity to take a break and have something to eat before getting started makes our events more effective and accessible. You should also ask for vegetarian, vegan, and gluten-free options and also non-alcoholic drinks. The effort is minimal and then everyone can have something to eat. If you are stuck, ask us for suggestions!</AnythingElseText>
+                    <AnythingElseText><Bold>Food and drinks</Bold> Learning to code after a long day at work can be hard. Offering free food and giving people the opportunity to take a break and have something to eat before getting started makes our events more effective and accessible. You should also ask for vegetarian, vegan, and gluten-free options and also non-alcoholic drinks. The effort is minimal and then everyone can have something to eat. If you are stuck, ask us for suggestions!</AnythingElseText>
 
                     <AnythingElseText>Not all companies are able to provide both space and food. If you need help finding a sponsor let us know.</AnythingElseText>
 
@@ -40,7 +40,7 @@ const Organisers = () => {
                 </GreyWrapper>
 
                 <EventWrapper>
-                    <h3>At the event</h3>
+                    <Subheading>At the event</Subheading>
                     <EventList>
                         <li>As people arrive at the event check them in through the workshop admin page, and double check what tutorials the students have signed up for so that you can pair them up prior to the event. Also, make sure you give them their name tag. Doing all of this will enable you to track demand and enforce the codebar attendance policy. The coaches will also only start appearing in the coach ranking after their attendance is confirmed.</li>
                         <li> Make sure the WiFi details are displayed in prominent places.</li>
