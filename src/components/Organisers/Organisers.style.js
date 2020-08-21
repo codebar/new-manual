@@ -47,7 +47,7 @@ const SubheadingAlt = styled.h2`
 const AnythingElseWrapper = styled.div`
     background-color: ${lightGrey};
     width: 100%;
-    // padding: 4rem 6rem 4rem 6rem;
+    padding: 4rem 6rem 4rem 6rem;
         @media screen and (max-width:400px){
             font-size: 0.9rem;
             padding: 1rem 1rem 1rem 1em;
