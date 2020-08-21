@@ -7,6 +7,7 @@ const lightGrey = '#EDEDED'
 
 const Wrapper = styled.div`
     color: ${black}
+    width: 80%;
 `
 
 const IntroText = styled.div`
@@ -57,7 +58,7 @@ const AnythingElseWrapper = styled.div`
 `
 
 const AnythingElseText = styled.p`
-    max-width: 80%;
+    max-width: 90%;
     @media screen and (max-width: 400px){
         margin: 0 auto;
     }
@@ -78,7 +79,7 @@ const EventList = styled.ul`
 
 
 
-const OtherInfoWrapper = styled.div`
+const GreyWrapper = styled.div`
     color: ${black};
     background-color: ${lightGrey};
     padding-top: 2rem;
@@ -92,7 +93,7 @@ export {
     AnythingElseWrapper,
     AnythingElseText,
     EventWrapper, 
-    OtherInfoWrapper, 
+    GreyWrapper, 
     Heading, 
     Subheading, 
     SubheadingAlt,

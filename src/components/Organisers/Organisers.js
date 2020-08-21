@@ -1,5 +1,5 @@
 import React from "react";
-import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, OtherInfoWrapper, Heading, Subheading, SubheadingAlt, EventList} from './Organisers.style'
+import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList} from './Organisers.style'
 
 
 const Organisers = () => {
@@ -22,7 +22,7 @@ const Organisers = () => {
                     <p>If it is possible please ask the host to label one of their toilets as gender neutral. We recommend using this sign.</p>
                 </IntroText>
 
-                <AnythingElseWrapper>
+                <GreyWrapper>
                     <h3>Anything else?</h3>
 
                     <AnythingElseText>Students and coaches We aim to have double the amount of students to coaches, and try to pair up 2 students who are working on the same tutorial with their assigned coach.</AnythingElseText>
@@ -37,7 +37,7 @@ const Organisers = () => {
                     <AnythingElseText>Anyone signed up to codebar will be able to RSVP to the event through the workshop page but only people subscribed to your chapter will receive an email invitation.</AnythingElseText>
 
                     <AnythingElseText>A few days out from the event, review the list of students for first-time attendees (anyone with a paw icon next to their name), and look for those with male pronouns or masculine-associated names. See if you can find their social media profile and check whether they meet the eligibility criteria. If you’re not able to find any information to indicate that they do meet the eligibility criteria, click the ‘Eligibility’ button on their profile to send out an automated eligibility check email. If they confirm that they’re eligible, add a note to their profile so that you don’t have to do this again. If they don’t respond by midday on the day of the workshop, it’s up to you whether you have a chat to them at the workshop or just remove them from the list.</AnythingElseText>
-                </AnythingElseWrapper>
+                </GreyWrapper>
 
                 <EventWrapper>
                     <h3>At the event</h3>
@@ -48,7 +48,7 @@ const Organisers = () => {
                         <li>Double check that the host has labelled one of their toilets as gender neutral. We recommend using this sign.</li>
                     </EventList>
                 </EventWrapper>
-                <OtherInfoWrapper>
+                <GreyWrapper>
                     <h3>Pairing</h3>
                     <p>As you start pairing students and coaches, it is important to let the coach pick what they want to teach as we have coaches of all experience levels attending. We normally do this by saying the name of 2 students doing the same tutorial, then let a coach say they’ll help.</p>
                     <p>If you have a lot of attendees, then you might need multiple organisers to help sign students in and note their planned topics of study. In these situations, a shared Google Doc can be useful to allow multiple contemporaneous editors. A common method is to list the students who’ve been signed in, in order of how difficult their subject is to find coaches to teach, from most difficult (e.g. advanced Java, PHP, iOS, testing, etc) to easiest (beginner HTML). You can then group students who are working on the same thing, and indicate a group by inserting line-breaks between groups.</p>
@@ -62,7 +62,7 @@ const Organisers = () => {
                     <p>If someone comes to you with a complaint, act on it promptly. If attendees are involved, speak to them in a private area where you cannot be overheard, or send them an email after the event. When passing on negative feedback about a coach, you may need to ask the student’s permission first, as this information can be identifying.</p>
                     <p>For difficult eligibility conversations, it often helps to remind people that our coaches, organisers and hosts donate their time and money to help those who have faced unfair barriers to entry into the tech world.</p>
                     <p>If you feel that you are unable to deal with this, you are more than welcome to send an email to hello@codebar.io and we will do our best to help you out or deal with any issues.</p>
-                </OtherInfoWrapper>
+                </GreyWrapper>
 
             </Wrapper>   
         </>
