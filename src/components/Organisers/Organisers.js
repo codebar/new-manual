@@ -1,5 +1,5 @@
 import React from "react";
-import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold} from './Organisers.style'
+import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold, ListItem } from './Organisers.style'
 
 
 const Organisers = () => {
@@ -42,10 +42,10 @@ const Organisers = () => {
                 <EventWrapper>
                     <Subheading>At the event</Subheading>
                     <EventList>
-                        <li>As people arrive at the event check them in through the workshop admin page, and double check what tutorials the students have signed up for so that you can pair them up prior to the event. Also, make sure you give them their name tag. Doing all of this will enable you to track demand and enforce the codebar attendance policy. The coaches will also only start appearing in the coach ranking after their attendance is confirmed.</li>
-                        <li> Make sure the WiFi details are displayed in prominent places.</li>
-                        <li>Depending on the size of the event we tend to spend the first half an hour having food and socialising before we pair people up around 19:00 (if we start at 18:30) and get started with coding. In some of our chapters we also run 5-minute lightning talks before we pair up the students and coaches. You are encouraged to try things out and see how it works better for you. Just remember to keep things running smoothly and allow the students at least 1:30 hour, if not more, of learning.</li>
-                        <li>Double check that the host has labelled one of their toilets as gender neutral. We recommend using this sign.</li>
+                        <ListItem>As people arrive at the event check them in through the workshop admin page, and double check what tutorials the students have signed up for so that you can pair them up prior to the event. Also, make sure you give them their name tag. Doing all of this will enable you to track demand and enforce the codebar attendance policy. The coaches will also only start appearing in the coach ranking after their attendance is confirmed.</ListItem>
+                        <ListItem> Make sure the WiFi details are displayed in prominent places.</ListItem>
+                        <ListItem>Depending on the size of the event we tend to spend the first half an hour having food and socialising before we pair people up around 19:00 (if we start at 18:30) and get started with coding. In some of our chapters we also run 5-minute lightning talks before we pair up the students and coaches. You are encouraged to try things out and see how it works better for you. Just remember to keep things running smoothly and allow the students at least 1:30 hour, if not more, of learning.</ListItem>
+                        <ListItem>Double check that the host has labelled one of their toilets as gender neutral. We recommend using this sign.</ListItem>
                     </EventList>
                 </EventWrapper>
                 <GreyWrapper>

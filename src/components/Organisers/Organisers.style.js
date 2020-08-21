@@ -87,6 +87,13 @@ const EventList = styled.ul`
     }
 `
 
+const ListItem = styled.li`
+    @media screen and (max-width: 500px){
+        margin: 0 0 1rem 0;
+    }
+`
+
+
 const Bold =styled.span`
     font-weight: bold;
     color: ${pink};
@@ -119,5 +126,6 @@ export {
     Subheading, 
     SubheadingAlt,
     EventList,
+    ListItem,
     Bold
 };
