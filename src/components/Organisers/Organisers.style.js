@@ -18,7 +18,7 @@ const IntroText = styled.div`
     margin: 5rem 5rem 4rem 5rem;
     max-width: 70%;
         @media screen and (max-width:500px){
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin: 1rem 0.8rem 3rem 0.8em;
         max-width: 90%;
         text-align: justify;
@@ -37,15 +37,32 @@ const Heading = styled.h1`
 
 const InternalLink = styled(Link)`
         color: ${pink};
-        text-decoration: ${textDecoration};
+        text-decoration: none;
+        margin-right: 2em;
+`
+
+const InternaLinkWrapper = styled.div`
+        display: flex;
+        flex-direction: row;
+        margin-right: 10rem;
+        margin-left: 10rem;
+        justify-content: space-between;
+        @media screen and (max-width:400px){
+            flex-direction: column;
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 90%;
+            font-size: 0.9rem;
+        }
 `
 
 const Subheading = styled.h2`
     font-weight: 550;
     
     color: ${black};
-        @media screen and (max-width:500px){
-        // font-size: 1rem;
+        @media screen and (max-width:400px){
+        font-size: 1rem;
         margin-top: 1rem;
         text-align: center;
     }
@@ -77,11 +94,10 @@ const EventWrapper = styled.div`
     color: ${black};
     padding: 2rem 4rem 2rem 4rem;;
     margin: 2rem 3rem 4rem 3rem
-        @media screen and (max-width: 500px){
-        margin-right: 0;
-        margin-left: 0;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        @media screen and (max-width: 400px){
+        margin: 2rem 0 2rem 0;
+        padding-left: 0rem;
+        padding-right: 0rem;
         text-align: justify;
         line-height: 1.5;
 `
@@ -136,5 +152,6 @@ export {
     EventList,
     ListItem,
     Bold, 
-    InternalLink
+    InternalLink,
+    InternaLinkWrapper
 };

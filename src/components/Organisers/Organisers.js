@@ -1,8 +1,8 @@
 import React from "react";
-import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold, ListItem, InternalLink } from './Organisers.style'
-import CodebarArea from './CodebarArea/CodebarArea';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import Coordinators from './Coordinators/Coordinators';
+import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold, ListItem, InternalLink, InternaLinkWrapper } from './Organisers.style'
+import CodebarArea from '../CodebarArea/CodebarArea';
+import { Route } from 'react-router-dom';
+import Coordinators from '../Coordinators/Coordinators';
 
 const Organisers = () => {
 
@@ -10,17 +10,21 @@ const Organisers = () => {
         <>
             <Wrapper>
                 <Heading>Organising workshops</Heading>
-                <InternalLink to="/codebararea" component={CodebarArea}>Bringing Codebar to your area</InternalLink>
-                <InternalLink to="/coordinator" component={Coordinators}>Coordinator Guide</InternalLink>
-        <InternalLink />        
-        {/* <BrowserRouter>
-        <Switch>
-            <InternalLink>
-            <Route path="/codebar-area" component={CodebarArea} />
-            <Route path="/coordinator-guide" component={Coordinators} />
-            </InternalLink>
-          </Switch>
-        </BrowserRouter> */}
+                <InternaLinkWrapper>
+                    <InternalLink to="/codebar-area">Bringing Codebar to your area<span>&#8599;</span></InternalLink>
+                    
+                    <InternalLink to="/coordinator">Coordinator Guide<span>&#8599;</span></InternalLink>
+                    <Route
+                    path="/codebar-area"
+                    component={CodebarArea}
+                    exact 
+                />
+                <Route
+                    path="/coordinator"
+                    component={Coordinators} 
+                />
+                </InternaLinkWrapper>
+      
                 <IntroText>
                     <Subheading>What do I need from a host?</Subheading>
                     <h3> Space</h3>
