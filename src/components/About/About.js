@@ -10,7 +10,7 @@ import {
   TextAlt,
   SponsorText,
   TextWrapper,
-  Wrapper,
+  AboutWrapper,
 } from './About.style';
 import HowToHelp from '../HowToHelp/HowToHelp';
 // import { uncodebar } from '../../assets/uncodebar-5.jpeg';
@@ -18,7 +18,8 @@ import HowToHelp from '../HowToHelp/HowToHelp';
 const About = () => {
   return (
     <>
-      <Wrapper>
+      <AboutWrapper>
+          <Contentwrapper>
         <Heading>We are codebar.</Heading>
         <Subheading>
           We are a registered charity that has been running weekly coding
@@ -30,7 +31,7 @@ const About = () => {
           cities from Brighton to Manchester and Edinburgh to New York, and
           Berlin, Sydney, and the list goes on.
         </Subheading>
-        <Contentwrapper>
+        {/* <Contentwrapper> */}
           <Img src={require('../../assets/workshop-1.jpg')} alt="workshop" />
           <Text>
             We have coached over 7000 students, with new people attending our
@@ -46,9 +47,9 @@ const About = () => {
             smoothly, but also be able to provide help and support to our
             smaller chapters.
           </TextAlt>
-        </Contentwrapper>
+        {/* </Contentwrapper> */}
 
-        <ContentwrapperAlt>
+        {/* <ContentwrapperAlt> */}
           <TextWrapper>
             <SponsorText>
               If you are a sponsor interested in helping get codebar started in
@@ -67,10 +68,10 @@ const About = () => {
             src={require('../../assets/uncodebar-5.jpeg')}
             alt="uncodebar-5"
           />
-        </ContentwrapperAlt>
-
+        {/* </ContentwrapperAlt> */}
+        </Contentwrapper>
         <HowToHelp />
-      </Wrapper>
+      </AboutWrapper>
     </>
   );
 };
