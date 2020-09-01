@@ -8,7 +8,7 @@ const Organisers = () => {
 
     return (
         <>
-            <Wrapper>
+ 
                 <Heading>Organising workshops</Heading>
                 <InternaLinkWrapper>
                     <InternalLink to={"/codebar-area"}>Bringing Codebar to your area<span>&#8599;</span></InternalLink>
@@ -81,7 +81,7 @@ const Organisers = () => {
                     <p>If you feel that you are unable to deal with this, you are more than welcome to send an email to hello@codebar.io and we will do our best to help you out or deal with any issues.</p>
                 </GreyWrapper>
 
-            </Wrapper>   
+
         </>
 
     )

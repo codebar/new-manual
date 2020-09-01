@@ -11,6 +11,9 @@ const textDecoration = 'text-decoration: none;';
 const Wrapper = styled.div`
     color: ${black}
     width: 80%;
+    @media screen and (max-width: 400px){
+        width: auto;
+    }
 `
 
 const IntroText = styled.div`
@@ -91,7 +94,7 @@ const AnythingElseText = styled.p`
         padding-bottom: 1rem;
     }
 `
-const EventWrapper = styled.div`
+const ListWrapper = styled.div`
     color: ${black};
     padding: 2rem 4rem 2rem 4rem;
     margin: 2rem 3rem 4rem 3rem;
@@ -101,7 +104,7 @@ const EventWrapper = styled.div`
         line-height: 1.5;
 `
 
-const EventList = styled.ul`
+const List = styled.ul`
     list-style-type: circle;
     @media screen and (max-width: 500px){
         padding: 0 0.5rem 0 0.5rem;
@@ -143,12 +146,12 @@ export {
     IntroText,
     AnythingElseWrapper,
     AnythingElseText,
-    EventWrapper, 
+    ListWrapper, 
     GreyWrapper, 
     Heading, 
     Subheading, 
     SubheadingAlt,
-    EventList,
+    List,
     ListItem,
     Bold, 
     InternalLink,
