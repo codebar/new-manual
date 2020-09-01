@@ -1,6 +1,8 @@
 import React from "react";
-import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold, ListItem } from './Organisers.style'
-
+import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold, ListItem, InternalLink } from './Organisers.style'
+import CodebarArea from './CodebarArea/CodebarArea';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import Coordinators from './Coordinators/Coordinators';
 
 const Organisers = () => {
 
@@ -8,6 +10,17 @@ const Organisers = () => {
         <>
             <Wrapper>
                 <Heading>Organising workshops</Heading>
+                <InternalLink to="/codebararea" component={CodebarArea}>Bringing Codebar to your area</InternalLink>
+                <InternalLink to="/coordinator" component={Coordinators}>Coordinator Guide</InternalLink>
+        <InternalLink />        
+        {/* <BrowserRouter>
+        <Switch>
+            <InternalLink>
+            <Route path="/codebar-area" component={CodebarArea} />
+            <Route path="/coordinator-guide" component={Coordinators} />
+            </InternalLink>
+          </Switch>
+        </BrowserRouter> */}
                 <IntroText>
                     <Subheading>What do I need from a host?</Subheading>
                     <h3> Space</h3>

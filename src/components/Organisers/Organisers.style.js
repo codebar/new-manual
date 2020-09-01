@@ -1,9 +1,12 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const black = '#000000';
 const white = '#FFFFFF';
 const lightGrey = '#EDEDED';
 const pink = '#FF036A';
+
+const textDecoration = 'text-decoration: none;';
 
 const Wrapper = styled.div`
     color: ${black}
@@ -30,6 +33,11 @@ const Heading = styled.h1`
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
+`
+
+const InternalLink = styled(Link)`
+        color: ${pink};
+        text-decoration: ${textDecoration};
 `
 
 const Subheading = styled.h2`
@@ -127,5 +135,6 @@ export {
     SubheadingAlt,
     EventList,
     ListItem,
-    Bold
+    Bold, 
+    InternalLink
 };
