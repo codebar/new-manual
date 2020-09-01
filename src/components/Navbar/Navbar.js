@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../../assets/image/logo.png';
+import logo from '../../assets/image/website-logo.png';
 import { Nav, Logo, MenuLink, ExternalLink, DonateLink } from './Navbar.style';
 
 const Navbar = () => {
   return (
     <Nav>
-      <MenuLink to="/" className="Logo">
-        <Logo src={logo} alt="codebar-logo" />
+      <MenuLink to="/" className="logoContainer">
+        <Logo className="logo" src={logo} alt="codebar-logo" />
       </MenuLink>
       <MenuLink to="/about" className="About">
         About

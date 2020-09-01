@@ -10,7 +10,6 @@ import Organisers from './components/Organisers/Organisers';
 import Coordinators from './components/Coordinators/Coordinators';
 import CodebarArea from './components/CodebarArea/CodebarArea';
 import Footer from './components/Footer/Footer';
-
 function App() {
   return (
     <>
