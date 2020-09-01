@@ -42,7 +42,7 @@ const InternalLink = styled(Link)`
         color: ${pink};
         ${textDecoration}
         text-decoration: none;
-        margin-right: 2em;
+        margin-right: 4em;
 `
 
 const InternaLinkWrapper = styled.div`
