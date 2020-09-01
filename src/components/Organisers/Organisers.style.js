@@ -37,6 +37,7 @@ const Heading = styled.h1`
 
 const InternalLink = styled(Link)`
         color: ${pink};
+        ${textDecoration}
         text-decoration: none;
         margin-right: 2em;
 `
