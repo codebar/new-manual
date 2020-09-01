@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { GlobalStyle } from '../../globalstyle/GlobalStyle';
+// import { GlobalStyle } from '../../globalstyle/GlobalStyle';
 
 
 const Wrapper = styled.body`
@@ -14,14 +14,14 @@ const black = '#000000';
 
 
 const Heading = styled.h1`
-    font-family: ${GlobalStyle};
+
     margin-left: 4rem;
     line-height: 1.5;
     font-size: 4rem;
 `
 
 const Subheading = styled.p`
-    font-family: ${GlobalStyle};
+
     color: ${darkGray};
     font-weight: lighter;
     font-size: 1.5rem;
@@ -37,7 +37,7 @@ const Introtext  = styled.div`
 `
 
 const VolunteerText = styled.p`
-    font-family: ${GlobalStyle};
+
     color: ${black};
     font-size: 1.4rem;
 `
