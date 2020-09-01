@@ -92,20 +92,18 @@ const AnythingElseText = styled.p`
 `
 const EventWrapper = styled.div`
     color: ${black};
-    padding: 2rem 4rem 2rem 4rem;;
-    margin: 2rem 3rem 4rem 3rem
+    padding: 2rem 4rem 2rem 4rem;
+    margin: 2rem 3rem 4rem 3rem;
         @media screen and (max-width: 400px){
-        margin: 2rem 0 2rem 0;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        text-align: justify;
+        margin: 0 0.5rem 2rem 0.5rem;
+        padding: 2rem 0 2rem 1rem;
         line-height: 1.5;
 `
 
 const EventList = styled.ul`
     list-style-type: circle;
     @media screen and (max-width: 500px){
-        padding: 0 0.5rem 0 2rem;
+        padding: 0 0.5rem 0 0.5rem;
         text-align: justify;
         line-height: 1.5;
     }
