@@ -30,7 +30,7 @@ const Heading = styled.h1`
     text-align: center;
     margin-bottom: 4rem;
         @media screen and (max-width:400px){
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin-bottom: 1rem;
         }
 `
@@ -62,7 +62,7 @@ const Subheading = styled.h2`
     
     color: ${black};
         @media screen and (max-width:400px){
-        font-size: 1rem;
+        font-size: 1.4rem;
         margin-top: 1rem;
         text-align: center;
     }
