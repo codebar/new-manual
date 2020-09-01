@@ -11,9 +11,9 @@ const Organisers = () => {
             <Wrapper>
                 <Heading>Organising workshops</Heading>
                 <InternaLinkWrapper>
-                    <InternalLink to="/codebar-area">Bringing Codebar to your area<span>&#8599;</span></InternalLink>
+                    <InternalLink to={"/codebar-area"}>Bringing Codebar to your area<span>&#8599;</span></InternalLink>
                     
-                    <InternalLink to="/coordinator">Coordinator Guide<span>&#8599;</span></InternalLink>
+                    <InternalLink to="/coordinators">Coordinator Guide<span>&#8599;</span></InternalLink>
                     <Route
                     path="/codebar-area"
                     component={CodebarArea}

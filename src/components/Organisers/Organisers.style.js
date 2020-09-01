@@ -17,7 +17,7 @@ const IntroText = styled.div`
     color: ${black};
     margin: 5rem 5rem 4rem 5rem;
     max-width: 70%;
-        @media screen and (max-width:500px){
+        @media screen and (max-width:400px){
         font-size: 1rem;
         margin: 1rem 0.8rem 3rem 0.8em;
         max-width: 90%;
@@ -53,7 +53,7 @@ const InternaLinkWrapper = styled.div`
             margin-left: 0;
             margin-right: 0;
             max-width: 90%;
-            font-size: 0.9rem;
+            font-size: 0.7rem;
         }
 `
 

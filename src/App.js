@@ -8,6 +8,7 @@ import Landing from './components/Landing/Landing';
 import Mailing from './components/MailingList/MailingList';
 import Organisers from './components/Organisers/Organisers';
 import Coordinators from './components/Coordinators/Coordinators';
+import CodebarArea from './components/CodebarArea/CodebarArea';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/organisers" component={Organisers} />
             <Route path="/coordinators" component={Coordinators} />
             <Route path="/mailing" component={Mailing} />
+            <Route path="/codebar-area" component={CodebarArea} />
           </Switch>
         </BrowserRouter>
         <Footer />
