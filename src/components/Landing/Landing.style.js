@@ -2,13 +2,16 @@ import styled from 'styled-components';
 
 const fontWeight = 'font-weight: lighter;';
 const zeroMargin = 'margin: 0';
+const darkGrayAlt = '#3D4A54';
+
 const LandingWrapper = styled.section`
   // padding: 0 2rem;
 `;
 const HeaderWrapper = styled.section`
   min-height: 80vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-basis: auto;
 `;
@@ -29,15 +32,14 @@ const LandingSubtitles = styled.h2`
   font-size: 2.5rem;
 `;
 
-const LearnMore = styled.button`
+const LearnMore = styled.a`
   font-size: 1.25rem;
-  border: none;
-  background-color: transparent;
   margin: 3rem 0;
-  padding: 0.75rem 1.2rem;
-  display: block;
+  display: inline-block;
   cursor: pointer;
-  ${fontWeight}
+  background-color: ${darkGrayAlt};
+  padding: 1rem 2rem;
+  color: white;
 `;
 
 const StatsWrapper = styled.section`
@@ -74,11 +76,13 @@ const ValuesWrapper = styled.section`
   grid-template-areas: '. .' '. .' '. .' '. .' '. .';
 `;
 
-const ValueWrapper = styled.div``;
+const ValueWrapper = styled.div`
+padding: 10rem 0;
+`;
 
 const ValueContainer = styled.section`
   background-color: rgba(244, 244, 244, 1);
-  padding: 0 10rem;
+  padding: 6rem 10rem;
 `;
 
 const ValueNumber = styled.h3`
@@ -86,11 +90,14 @@ const ValueNumber = styled.h3`
   font-size: 2rem;
   ${zeroMargin}
 `;
+
 const ValueSubtitle = styled.h4`
   ${fontWeight}
   font-size: 1.3rem;
+  padding: 0.25rem 0 0.5rem 0;
   ${zeroMargin}
 `;
+
 const ValueText = styled.p`
   ${zeroMargin}
 `;

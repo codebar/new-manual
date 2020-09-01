@@ -21,8 +21,6 @@ import {
 } from './Landing.style';
 import HowToHelp from '../HowToHelp/HowToHelp';
 
-import arrow from '../../assets/image/down-arrow.svg';
-
 const Landing = () => {
   const ref = useRef();
 
@@ -38,20 +36,19 @@ const Landing = () => {
         <HeaderText>
           codebar is a registered charity that facilitates the growth of a
           diverse tech community by running regular programming workshops.
-          <LearnMore onClick={executeScroll}>
-            Learn more
-            <HeaderImg src={arrow} />
-          </LearnMore>
         </HeaderText>
+        <LearnMore onClick={executeScroll}>
+            Learn more
+          </LearnMore>
         <HeaderImg />
       </HeaderWrapper>
 
-      <ValueContainer className="valueSection">
+      <ValueContainer className="valueSection" ref={ref}>
         <LandingSubtitles>
           We’re a community built on the following values
         </LandingSubtitles>
 
-        <ValuesWrapper ref={ref}>
+        <ValuesWrapper>
           <ImageWrapper>hey</ImageWrapper>
           <ValueWrapper>
             <ValueNumber>01</ValueNumber>
