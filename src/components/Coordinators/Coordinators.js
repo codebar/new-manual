@@ -1,10 +1,22 @@
 import React from "react";
-
+import {  Wrapper,
+    IntroText,
+    AnythingElseWrapper,
+    AnythingElseText,
+    ListWrapper, 
+    GreyWrapper, 
+    Title, 
+    Heading, 
+    List,
+    ListItem,
+    Bold, 
+    InternalLink,
+    InternaLinkWrapper} from "../../globalstyle/GlobalStyle";
 const Coordinators = () => {
     return (
         <>
-            <h1>Coordinators Guide </h1>
-            <div>
+            <Title>Coordinators Guide </Title>
+            <IntroText>
                 <p>codebar workshops are a team effort and we really appreciate you wanting to help run things smoother! Here are some tips on how you can help:</p>
                 <ul>
                     <li>Try to get to the event a little early: 10 minutes or so before the listed start time.</li>
@@ -16,7 +28,7 @@ const Coordinators = () => {
                 <p>Keep an eye for people who are on their own. Talk to them and introduce them to other people.</p>
                 <p>If you spot someone without a name badge, chances are they’re not checked in. Send them over to the front desk.</p>
                 <p>If someone comes to you with a complaint or a concern that you don’t know how to address, remember that the rest of the organisers and coordinators have your back and you can always ask for help.</p>
-            </div>
+            </IntroText>
             <div>
                 <h2>Coach inductions</h2>
                 <p>Have they read the Code of Conduct?
