@@ -1,18 +1,22 @@
 import React from "react";
 import {
-    WhyWrapper,
+  WhyWrapper,
+  HowWrapper,
     ReasonWrapper,
     ReasonsWrapper,
     ReasonNumber,
     ReasonSubtitle,
-    ReasonText
+    ReasonText,
+    SponsorTitles,
+    WhyText,
+    WhyEmphasise
   } from './Sponsors.style';
 
 const Sponsors = () => {
     return (
         <>
         <WhyWrapper>
-            <h1>Why should you sponsor a workshop?</h1>
+            <SponsorTitles>Why should you sponsor a workshop?</SponsorTitles>
             <ReasonsWrapper>
           <ReasonWrapper>
             <ReasonNumber>01</ReasonNumber>
@@ -56,6 +60,20 @@ const Sponsors = () => {
           </ReasonsWrapper>
     
         </WhyWrapper>
+
+        <HowWrapper>
+        <SponsorTitles>How to  sponsor  a workshop?</SponsorTitles>
+
+        <WhyText>
+        Depending on the location, event attendee numbers can range from as low as 10 to as high as 60.<br /> So for exact details you should send an email to hello@codebar.io enquiring about the specifics of hosting events with different codebar chapters.<br /><br />
+
+The minimum requirements for hosting an event incude providing: <br />
+<WhyEmphasise>desk space, power outlets, and a stable internet connection.</WhyEmphasise><br /><br />
+
+
+We encourage you to provide food and drinks. As our events typically take place immediately after work for many students and coaches, it is recommended that hosts provide some hot food, as attendees will not have another chance to eat dinner. In London, the typical spend for hot food is roughly £200-250 for one workshop; outside of central London it can be much lower.
+        </WhyText>
+        </HowWrapper>
         </>
     )
 }
