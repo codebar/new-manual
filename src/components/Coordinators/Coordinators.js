@@ -55,25 +55,25 @@ const Coordinators = () => {
                 
                 <NumberedList>
                     <NumberedListItem><Pink>1</Pink>Stress that we discourage the coaches from using their laptops. They are there to watch and guide, people are sometimes hesitant to ask a lot of questions.</NumberedListItem>
-                    <NumberedListItem>Explain that our goal is to guide students, answer their questions, help them learn how to tackle problems and to encourage them.</NumberedListItem>
-                    <NumberedListItem>If they are working with a group and are finding it hard (as the students might work at a different pace or need more attention) they should let us know and we will try to find someone to help out.</NumberedListItem>
-                    <NumberedListItem>If they need any help or have any concerns, they should speak to a coordinator or organiser.</NumberedListItem>
-                    <NumberedListItem>If they feel uncomfortable with someone’s behaviour, they should bring it to the attention of one of the organisers. It is very important to us that everyone feels safe and comfortable.</NumberedListItem>
-                    <NumberedListItem>Thank them for coming. We appreciate their help and any feedback that they may have, as without them we wouldn’t be able to have codebar! Let them know that they can get in contact with us at the local chapter’s mailing list (e.g. brighton@codebar.io).</NumberedListItem>
+                    <NumberedListItem><Pink>2</Pink>Explain that our goal is to guide students, answer their questions, help them learn how to tackle problems and to encourage them.</NumberedListItem>
+                    <NumberedListItem><Pink>3</Pink>If they are working with a group and are finding it hard (as the students might work at a different pace or need more attention) they should let us know and we will try to find someone to help out.</NumberedListItem>
+                    <NumberedListItem><Pink>4</Pink>If they need any help or have any concerns, they should speak to a coordinator or organiser.</NumberedListItem>
+                    <NumberedListItem><Pink>5</Pink>If they feel uncomfortable with someone’s behaviour, they should bring it to the attention of one of the organisers. It is very important to us that everyone feels safe and comfortable.</NumberedListItem>
+                    <NumberedListItem><Pink>6</Pink>Thank them for coming. We appreciate their help and any feedback that they may have, as without them we wouldn’t be able to have codebar! Let them know that they can get in contact with us at the local chapter’s mailing list (e.g. brighton@codebar.io).</NumberedListItem>
                 </NumberedList>
             </GreyWrapper>
             <GreyWrapper>
                 <Heading>Student inductions</Heading>
-                <ol>
-                    <li>1. Have they read the Code of Conduct?</li>
-                    <li>How did they hear about codebar? What made them want to come along?</li>
-                    <li>Have they done any development before? If yes, what was that? Do they have a goal in mind? (e.g. Are they trying to build their own web app or a portfolio?)</li>
-                    <li>Are you a student? Speak to them about your experience and how programming has changed things for you.</li>
-                    <li>Typing can be hard, but it’s very important when learning to code. Type everything and DO NOT copy and paste.</li>
-                    <li>codebar is not just about learning to code but also about making friends and meeting people with similar goals. Encourage them to chat to other people and come to the social gathering afterwards.</li>
-                    <li>If they need any help they should look for a coordinator or organiser.</li>
-                    <li>If they feel uncomfortable with someone’s behaviour, they should bring it to the attention of one of the organisers. It is very important to us to ensure that everyone feels safe and comfortable.</li>
-                </ol>
+                <NumberedList>
+                    <NumberedListItem><Pink>1</Pink> Have they read the Code of Conduct?</NumberedListItem>
+                    <NumberedListItem><Pink>2</Pink> How did they hear about codebar? What made them want to come along?</NumberedListItem>
+                    <NumberedListItem><Pink>3</Pink> Have they done any development before? If yes, what was that? Do they have a goal in mind? (e.g. Are they trying to build their own web app or a portfolio?)</NumberedListItem>
+                    <NumberedListItem><Pink>4</Pink> Are you a student? Speak to them about your experience and how programming has changed things for you.</NumberedListItem>
+                    <NumberedListItem><Pink>5</Pink> Typing can be hard, but it’s very important when learning to code. Type everything and DO NOT copy and paste.</NumberedListItem>
+                    <NumberedListItem><Pink>6</Pink> codebar is not just about learning to code but also about making friends and meeting people with similar goals. Encourage them to chat to other people and come to the social gathering afterwards.</NumberedListItem>
+                    <NumberedListItem><Pink>7</Pink> If they need any help they should look for a coordinator or organiser.</NumberedListItem>
+                    <NumberedListItem><Pink>8</Pink> If they feel uncomfortable with someone’s behaviour, they should bring it to the attention of one of the organisers. It is very important to us to ensure that everyone feels safe and comfortable.</NumberedListItem>
+                </NumberedList>
             </GreyWrapper>
         </>
     )

@@ -8,6 +8,9 @@ const pink = '#FF036A';
 
 const Pink = styled.span`
     color: ${pink};
+    font-weight: bold;
+    font-size: 4rem;
+    margin-right: 5%;
 `
 const NumberedList = styled.ol`
     color: ${black}; //remove this line
@@ -15,6 +18,9 @@ const NumberedList = styled.ol`
 `
 const NumberedListItem = styled.li`
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
 `
 // wrap the numbers in a span, then apply styling//
 
