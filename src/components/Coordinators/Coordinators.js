@@ -6,9 +6,11 @@ const Coordinators = () => {
             <h1>Coordinators Guide </h1>
             <div>
                 <p>codebar workshops are a team effort and we really appreciate you wanting to help run things smoother! Here are some tips on how you can help:</p>
-                <p>Try to get to the event a little early: 10 minutes or so before the listed start time.</p>
-                <p>Be friendly, positive, and encouraging.</p>
-
+                <ul>
+                    <li>Try to get to the event a little early: 10 minutes or so before the listed start time.</li>
+                    <li>Be friendly, positive, and encouraging.</li>
+                </ul>
+                
                 <p>Try to be close at hand to the front desk where people are being checked in. This is so you are close by to give inductions and help with any required tasks. Once you’ve finished an induction or helping with something, head back to the front desk.</p>
                 <p>Try not to get caught up in conversations unless there are no more inductions or the organisers don’t need your help anymore.</p>
                 <p>Keep an eye for people who are on their own. Talk to them and introduce them to other people.</p>
