@@ -3,10 +3,12 @@ import styled from 'styled-components';
 const fontWeight = 'font-weight: lighter;';
 const zeroMargin = 'margin: 0';
 const lightGrey = 'rgba(244, 244, 244, 1)';
+const lineHeight = 'line-height: 2rem';
 
 const SponsorSection = styled.section`
   margin: 4rem 9rem;
 `;
+
 const ReasonWrapper = styled.div`
   padding: 3rem 0;
 `;
@@ -34,14 +36,9 @@ const ReasonSubtitle = styled.h4`
 `;
 
 const ReasonText = styled.p`
-  line-height: 2rem;
   color: #5b5b5b;
+  line-height: 2rem;
   ${zeroMargin}
-`;
-
-const SponsorTitles = styled.h1`
-  ${fontWeight}
-  font-size: 3rem;
 `;
 
 const WhyText = styled.p`
@@ -82,7 +79,66 @@ const PackagesWrapper = styled.section`
 const Package = styled.div`
   background-color: ${lightGrey};
   padding: 2.5rem;
-  line-height: 2rem;
+  border-radius: 1rem;
+  ${lineHeight}
+`;
+
+const PackagePrice = styled.h3`
+  font-weight: 400;
+  font-size: 1.5rem;
+`;
+
+const InReturnText = styled.p`
+  ${lineHeight}
+`;
+
+const PackageBenefit = styled.li`
+  list-style-type: circle;
+`;
+
+const PackageBenefits = styled.ul`
+  padding-left: 0;
+`;
+
+const SponsorsText = styled.p``;
+const SponsorTitles = styled.h1`
+  ${fontWeight}
+  font-size: 3rem;
+`;
+
+const GreyedBackground = styled.div`
+  background-color: ${lightGrey};
+`;
+
+const SponsoredCompanies = styled.div`
+  text-align: center;
+  padding: 2rem 5rem;
+`;
+
+const CompaniesLogo = styled.img`
+  max-width: 7rem;
+  margin: auto;
+  padding: 1rem 0;
+`;
+
+const BronzeGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    '. . . . . .'
+    '. . . . . .'
+    '. . . . . .'
+    '. . . . . .';
+`;
+
+const CompaniesSubtitle = styled.h2`
+  font-weight: 400;
+`;
+
+const CompaniesSection = styled.section`
+  margin: 0;
 `;
 
 export {
@@ -101,4 +157,15 @@ export {
   OptionSub,
   PackagesWrapper,
   Package,
+  PackagePrice,
+  InReturnText,
+  PackageBenefit,
+  PackageBenefits,
+  SponsorsText,
+  GreyedBackground,
+  SponsoredCompanies,
+  CompaniesLogo,
+  BronzeGrid,
+  CompaniesSubtitle,
+  CompaniesSection,
 };
