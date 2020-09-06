@@ -9,6 +9,7 @@ const GlobalStyle = styled.body`
   color: #1f1f1f;
 `;
 
+
 // const primaryDarkgreyColor = 'rgba(67, 78, 89, 1)';
 // const primaryBlueColor = 'rgba(75, 175, 255, 1)';
 // const primaryPinkColor = 'rgba(255, 3, 106, 1)';
