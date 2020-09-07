@@ -4,12 +4,11 @@ import { Wrapper, List, IntroText, ListItem, ExtLink  } from './MailingList.styl
 
 const Mailing = () => {
   return(
-  <>
     <Wrapper>
         <Title>Mailing List Policy</Title>
         <IntroText>
           <p>codebar is a non profit dedicated to promoting diversity in the technology/software development industry. We encourage active involvement in the tech community and are keen to communicate information to our students that would benefit their education.</p>
-           <p>We have a dedicated mailing list for our students, as well as regular emails inviting them to upcoming events. If you would like to offer us something we would love to hear from you, but ask that you adhere to the following principles:</p>
+          <p>We have a dedicated mailing list for our students, as well as regular emails inviting them to upcoming events. If you would like to offer us something we would love to hear from you, but ask that you adhere to the following principles:</p>
         </IntroText>
 
         <List>
@@ -20,7 +19,6 @@ const Mailing = () => {
           <ListItem>Any messages that deviate from this policy may be accepted at the sole discretion of the codebar organisers.</ListItem>
         </List>
       </Wrapper>
-  </>
   )
 };
 
