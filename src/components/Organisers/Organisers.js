@@ -1,5 +1,6 @@
 import React from "react";
-import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold, ListItem, InternalLink, InternaLinkWrapper } from './Organisers.style'
+import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold, ListItem, InternalLink, InternaLinkWrapper } from './Organisers.style';
+import { Title } from '../../globalstyle/GlobalStyle';
 import CodebarArea from '../CodebarArea/CodebarArea';
 import { Route } from 'react-router-dom';
 import Coordinators from '../Coordinators/Coordinators';
@@ -9,7 +10,7 @@ const Organisers = () => {
     return (
         <>
  
-                <Heading>Organising workshops</Heading>
+                <Title>Organising workshops</Title>
                 <InternaLinkWrapper>
                     <InternalLink to={"/codebar-area"}>Bringing Codebar to your area<span>&#8599;</span></InternalLink>
                     
