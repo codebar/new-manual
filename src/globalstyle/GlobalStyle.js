@@ -21,6 +21,8 @@ const white = '#FFFFFF';
 const lightGrey = '#EDEDED';
 const pink = '#FF036A';
 
+const fontWeight = 'font-weight: lighter;';
+
 const textDecoration = 'text-decoration: none;';
 
 const Wrapper = styled.div`
@@ -44,7 +46,7 @@ const IntroText = styled.div`
 
 `
 const Title = styled.h1`
-    font-weight: 600;
+    ${fontWeight};
     text-align: center;
     margin-bottom: 4rem;
         @media screen and (max-width:400px){
