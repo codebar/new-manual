@@ -6,7 +6,11 @@ const lightGrey = 'rgba(244, 244, 244, 1)';
 const lineHeight = 'line-height: 2rem';
 
 const SponsorSection = styled.section`
-  margin: 4rem 9rem;
+  // margin: 4rem 9rem;
+  // min-width: 100vw;
+  @media screen and (max-width: 400px) {
+    // margin: 0 auto;
+  }
 `;
 
 const ReasonWrapper = styled.div`
@@ -19,6 +23,12 @@ const ReasonsWrapper = styled.section`
   grid-template-rows: 1fr 1fr;
   gap: 0em 7em;
   grid-template-areas: '. .' '. .';
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: '.';
+  }
 `;
 
 const ReasonNumber = styled.h3`
@@ -74,6 +84,11 @@ const PackagesWrapper = styled.section`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 1em 3em;
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 `;
 
 const Package = styled.div`
@@ -113,6 +128,9 @@ const GreyedBackground = styled.div`
 const SponsoredCompanies = styled.div`
   text-align: center;
   padding: 2rem 5rem;
+  @media screen and (max-width: 400px) {
+    padding: 0;
+  }
 `;
 
 const CompaniesLogo = styled.img`
@@ -126,11 +144,10 @@ const BronzeGrid = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas:
-    '. . . . . .'
-    '. . . . . .'
-    '. . . . . .'
-    '. . . . . .';
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 `;
 
 const CompaniesSubtitle = styled.h2`
