@@ -4,7 +4,6 @@ import { Wrapper, List, IntroText, ListItem, ExtLink  } from './MailingList.styl
 
 const Mailing = () => {
   return(
-  <>
     <Wrapper>
         <Title>Mailing List Policy</Title>
         <IntroText>
@@ -20,7 +19,6 @@ const Mailing = () => {
           <ListItem>Any messages that deviate from this policy may be accepted at the sole discretion of the codebar organisers.</ListItem>
         </List>
       </Wrapper>
-  </>
   )
 };
 

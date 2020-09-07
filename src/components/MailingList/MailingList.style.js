@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../globalstyle/mediaQueries';
 
 
 const black = '#000000';
@@ -7,44 +8,49 @@ const blue = '4BAFFF';
 const Wrapper = styled.div`
     color: ${black};
     font-weight: lighter;
-    // margin: 8rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
-    padding-left: 8rem;
-    padding-right: 6rem;
+    justify-content: center;
     text-align: center;
-    // width: 90%;
-    @media screen and (max-width: 400px){
-        width: auto;
+    @media ${device.mobileS}{
+        margin: 1rem 1rem 2rem 1rem;
+        
+    }
+    @media ${device.mobileL}{
+        width: 100%;
+        margin: 2rem 1.5rem 2rem 1.5rem;
+    }
+    @media ${device.tablet}{
+        margin: 2rem 1.5rem 2rem 1.5rem;
     }
 `
 
 const IntroText = styled.div`
-    color: ${black};
-    // margin: 5rem 5rem 1rem 4rem;
-    // max-width: 70%;
-    
+    line-height: 1.8;
     text-align: justify;
-        @media screen and (max-width:400px){
-        font-size: 1rem;
-        margin: 1rem 0.8rem 3rem 0.8em;
-        max-width: 90%;
-       
+    @media ${device.laptopL}{
+        margin: 5rem 5rem 1rem 6rem;
+        width: 80%;
     }
-
+    @media ${device.desktop}{
+        margin: 5rem 5rem 1rem 8rem;
+    }
 `
 
 const List = styled.ul`
-    // margin: 6rem;
-    margin: 0 6rem 6rem 3rem;
-    justify-content: center;
-    max-width: 75%;
+    @media ${device.mobileL}{
+        max-width: 75%;
+        margin: 2rem 3.5rem 2rem 4.5rem;
+    }
+    @media ${device.tablet}{
+        max-width: 70%;
+        margin-left: 5rem;
+    }
+    @media ${device.laptopL}{
+        margin-left: 8rem;
+    }
 `
 
 const ListItem = styled.li`
     line-height: 1.8;
-    margin-bottom: 0.25%;
-    // max-width: 70%;
     text-align: justify;
 `
 const ExtLink = styled.a`
