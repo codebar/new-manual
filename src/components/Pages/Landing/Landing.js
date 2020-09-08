@@ -19,7 +19,7 @@ import {
   ImageWrapper,
   ValuesBold,
 } from './Landing.style';
-import HowToHelp from '../HowToHelp/HowToHelp';
+import HowToHelp from '../../HowToHelp/HowToHelp';
 
 const Landing = () => {
   const ref = useRef();
@@ -37,9 +37,7 @@ const Landing = () => {
           codebar is a registered charity that facilitates the growth of a
           diverse tech community by running regular programming workshops.
         </HeaderText>
-        <LearnMore onClick={executeScroll}>
-            Learn more
-          </LearnMore>
+        <LearnMore onClick={executeScroll}>Learn more</LearnMore>
         <HeaderImg />
       </HeaderWrapper>
 

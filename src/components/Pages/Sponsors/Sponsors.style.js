@@ -7,6 +7,10 @@ const lineHeight = 'line-height: 2rem';
 
 const SponsorSection = styled.section`
   margin: 4rem 9rem;
+  // min-width: 100vw;
+  @media screen and (max-width: 400px) {
+    // margin: 0 auto;
+  }
 `;
 
 const ReasonWrapper = styled.div`
@@ -19,6 +23,12 @@ const ReasonsWrapper = styled.section`
   grid-template-rows: 1fr 1fr;
   gap: 0em 7em;
   grid-template-areas: '. .' '. .';
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: '.';
+  }
 `;
 
 const ReasonNumber = styled.h3`
@@ -44,7 +54,7 @@ const ReasonText = styled.p`
 const WhyText = styled.p`
   font-size: 1.15rem;
   ${fontWeight}
-  font-weight: 400;
+  // font-weight: 400;
   line-height: 2.5rem;
 `;
 const WhyEmphasise = styled.span`
@@ -61,9 +71,18 @@ const FoodOptions = styled.section`
 const Option = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: yellow;
+  padding: 2rem;
 `;
 
-const OptionText = styled.p``;
+const OptionImg = styled.img`
+  max-width: 8rem;
+  padding: 2rem 0;
+`;
+
+const OptionText = styled.p`
+  line-height: 2rem;
+`;
 
 const OptionSub = styled.h4`
   ${zeroMargin}
@@ -74,6 +93,11 @@ const PackagesWrapper = styled.section`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 1em 3em;
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 `;
 
 const Package = styled.div`
@@ -113,10 +137,13 @@ const GreyedBackground = styled.div`
 const SponsoredCompanies = styled.div`
   text-align: center;
   padding: 2rem 5rem;
+  @media screen and (max-width: 400px) {
+    padding: 0;
+  }
 `;
 
 const CompaniesLogo = styled.img`
-  max-width: 7rem;
+  max-width: 6rem;
   margin: auto;
   padding: 1rem 0;
 `;
@@ -126,11 +153,10 @@ const BronzeGrid = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas:
-    '. . . . . .'
-    '. . . . . .'
-    '. . . . . .'
-    '. . . . . .';
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 `;
 
 const CompaniesSubtitle = styled.h2`
@@ -139,6 +165,10 @@ const CompaniesSubtitle = styled.h2`
 
 const CompaniesSection = styled.section`
   margin: 0;
+`;
+
+const CompaniesText = styled.div`
+  margin: 4rem 9rem;
 `;
 
 export {
@@ -155,6 +185,7 @@ export {
   Option,
   OptionText,
   OptionSub,
+  OptionImg,
   PackagesWrapper,
   Package,
   PackagePrice,
@@ -168,4 +199,5 @@ export {
   BronzeGrid,
   CompaniesSubtitle,
   CompaniesSection,
+  CompaniesText,
 };
