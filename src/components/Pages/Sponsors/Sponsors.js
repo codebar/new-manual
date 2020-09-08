@@ -26,33 +26,37 @@ import {
   BronzeGrid,
   CompaniesSubtitle,
   CompaniesSection,
+  OptionImg,
+  CompaniesText,
 } from './Sponsors.style';
-import makers from '../../assets/image/sponsors/makers.png';
-import github from '../../assets/image/sponsors/github.png';
-import ebay from '../../assets/image/sponsors/ebay.png';
-import ministryofjustice from '../../assets/image/sponsors/ministryofjustice.png';
-import lego from '../../assets/image/sponsors/lego.svg';
-import twitter from '../../assets/image/sponsors/twitter.png';
-import bbc from '../../assets/image/sponsors/bbc.png';
-import deliveroo from '../../assets/image/sponsors/deliveroo.png';
-import gumtree from '../../assets/image/sponsors/gumtree.svg';
-import mands from '../../assets/image/sponsors/mands.png';
-import skyscanner from '../../assets/image/sponsors/skyscanner.png';
-import microsoft from '../../assets/image/sponsors/microsoft.png';
-import madebymany from '../../assets/image/sponsors/madebymany.png';
-import justeat from '../../assets/image/sponsors/justeat.png';
-import typeform from '../../assets/image/sponsors/typeform.png';
-import busuu from '../../assets/image/sponsors/busuu.png';
-import monzo from '../../assets/image/sponsors/monzo.png';
-import hellofresh from '../../assets/image/sponsors/hellofresh.png';
-import goldmansachs from '../../assets/image/sponsors/goldmansachs.png';
-import lloyds from '../../assets/image/sponsors/lloyds.png';
-import moo from '../../assets/image/sponsors/moo.png';
-import ibm from '../../assets/image/sponsors/ibm.png';
-import buzzfeed from '../../assets/image/sponsors/buzzfeed.svg';
-import thoughtworks from '../../assets/image/sponsors/thoughtworks.png';
-import dazn from '../../assets/image/sponsors/dazn.png';
-import netaporter from '../../assets/image/sponsors/netaporter.png';
+import makers from '../../../assets/image/sponsors/makers.png';
+import github from '../../../assets/image/sponsors/github.png';
+import ebay from '../../../assets/image/sponsors/ebay.png';
+import ministryofjustice from '../../../assets/image/sponsors/ministryofjustice.png';
+import lego from '../../../assets/image/sponsors/lego.svg';
+import twitter from '../../../assets/image/sponsors/twitter.png';
+import bbc from '../../../assets/image/sponsors/bbc.png';
+import deliveroo from '../../../assets/image/sponsors/deliveroo.png';
+import gumtree from '../../../assets/image/sponsors/gumtree.svg';
+import mands from '../../../assets/image/sponsors/mands.png';
+import skyscanner from '../../../assets/image/sponsors/skyscanner.png';
+import microsoft from '../../../assets/image/sponsors/microsoft.png';
+import madebymany from '../../../assets/image/sponsors/madebymany.png';
+import justeat from '../../../assets/image/sponsors/justeat.png';
+import typeform from '../../../assets/image/sponsors/typeform.png';
+import busuu from '../../../assets/image/sponsors/busuu.png';
+import monzo from '../../../assets/image/sponsors/monzo.png';
+import hellofresh from '../../../assets/image/sponsors/hellofresh.png';
+import goldmansachs from '../../../assets/image/sponsors/goldmansachs.png';
+import lloyds from '../../../assets/image/sponsors/lloyds.png';
+import moo from '../../../assets/image/sponsors/moo.png';
+import ibm from '../../../assets/image/sponsors/ibm.png';
+import buzzfeed from '../../../assets/image/sponsors/buzzfeed.svg';
+import thoughtworks from '../../../assets/image/sponsors/thoughtworks.png';
+import dazn from '../../../assets/image/sponsors/dazn.png';
+import netaporter from '../../../assets/image/sponsors/netaporter.png';
+import drink from '../../../assets/image/sponsors/drink.png';
+import food from '../../../assets/image/sponsors/food.png';
 
 const Sponsors = () => {
   return (
@@ -138,7 +142,7 @@ const Sponsors = () => {
 
         <FoodOptions>
           <Option>
-            {/* <img /> */}
+            <OptionImg src={food} />
             <OptionSub>Food option</OptionSub>
             <OptionText>
               Try to provide some vegetarian, vegan and gluten-free options -
@@ -148,7 +152,7 @@ const Sponsors = () => {
             </OptionText>
           </Option>
           <Option>
-            {/* <img /> */}
+            <OptionImg src={drink} />
             <OptionSub>Drinks</OptionSub>
             <OptionText>
               Please make sure you provide non-alcoholic drinks and water. Some
@@ -266,20 +270,22 @@ const Sponsors = () => {
       </SponsorSection>
 
       <CompaniesSection>
-        <SponsorTitles>We have previously worked with..</SponsorTitles>
-        <SponsorsText>
-          Without our sponsors, running codebar would be impossible. They
-          provide us with space, food and drinks, internet, and they also help
-          us cover our running costs.
-          <br />
-          <br />
-          Thank you for sharing our dream of creating a more welcoming, equal
-          and diverse tech industry.
-          <br />
-          <br />
-          If you are interested in becoming a host please do get in touch with
-          us at hello@codebar.io .
-        </SponsorsText>
+        <CompaniesText>
+          <SponsorTitles>We have previously worked with..</SponsorTitles>
+          <SponsorsText>
+            Without our sponsors, running codebar would be impossible. They
+            provide us with space, food and drinks, internet, and they also help
+            us cover our running costs.
+            <br />
+            <br />
+            Thank you for sharing our dream of creating a more welcoming, equal
+            and diverse tech industry.
+            <br />
+            <br />
+            If you are interested in becoming a host please do get in touch with
+            us at hello@codebar.io .
+          </SponsorsText>
+        </CompaniesText>
         <GreyedBackground>
           <SponsoredCompanies>
             <CompaniesSubtitle>Gold sponsors</CompaniesSubtitle>
