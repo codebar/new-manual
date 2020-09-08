@@ -12,27 +12,27 @@ import {
   TextWrapper,
   AboutWrapper,
 } from './About.style';
-import HowToHelp from '../HowToHelp/HowToHelp';
+import HowToHelp from '../../HowToHelp/HowToHelp';
 // import { uncodebar } from '../../assets/uncodebar-5.jpeg';
 
 const About = () => {
   return (
     <>
       <AboutWrapper>
-          <Contentwrapper>
-        <Heading>We are codebar.</Heading>
-        <Subheading>
-          We are a registered charity that has been running weekly coding
-          workshops since October 2013, with London as its first chapter.{' '}
-        </Subheading>
+        <Contentwrapper>
+          <Heading>We are codebar.</Heading>
+          <Subheading>
+            We are a registered charity that has been running weekly coding
+            workshops since October 2013, with London as its first chapter.{' '}
+          </Subheading>
 
-        <Subheading>
-          Since then we have expanded to running workshops in 19 different
-          cities from Brighton to Manchester and Edinburgh to New York, and
-          Berlin, Sydney, and the list goes on.
-        </Subheading>
-        {/* <Contentwrapper> */}
-          <Img src={require('../../assets/workshop-1.jpg')} alt="workshop" />
+          <Subheading>
+            Since then we have expanded to running workshops in 19 different
+            cities from Brighton to Manchester and Edinburgh to New York, and
+            Berlin, Sydney, and the list goes on.
+          </Subheading>
+          {/* <Contentwrapper> */}
+          <Img src={require('../../../assets/workshop-1.jpg')} alt="workshop" />
           <Text>
             We have coached over 7000 students, with new people attending our
             events every week and a long waiting list at our London events.
@@ -47,9 +47,9 @@ const About = () => {
             smoothly, but also be able to provide help and support to our
             smaller chapters.
           </TextAlt>
-        {/* </Contentwrapper> */}
+          {/* </Contentwrapper> */}
 
-        {/* <ContentwrapperAlt> */}
+          {/* <ContentwrapperAlt> */}
           <TextWrapper>
             <SponsorText>
               If you are a sponsor interested in helping get codebar started in
@@ -65,10 +65,10 @@ const About = () => {
           </TextWrapper>
 
           <Img
-            src={require('../../assets/uncodebar-5.jpeg')}
+            src={require('../../../assets/uncodebar-5.jpeg')}
             alt="uncodebar-5"
           />
-        {/* </ContentwrapperAlt> */}
+          {/* </ContentwrapperAlt> */}
         </Contentwrapper>
         <HowToHelp />
       </AboutWrapper>

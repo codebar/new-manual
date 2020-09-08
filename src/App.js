@@ -2,13 +2,13 @@ import React from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from './globalstyle/GlobalStyle';
 import Navbar from './components/Navbar/Navbar';
-import About from './components/About/About';
-import Sponsors from './components/Sponsors/Sponsors';
-import Landing from './components/Landing/Landing';
-import Mailing from './components/MailingList/MailingList';
-import Organisers from './components/Organisers/Organisers';
-import Coordinators from './components/Coordinators/Coordinators';
-import CodebarArea from './components/CodebarArea/CodebarArea';
+import About from './components/Pages/About/About';
+import Sponsors from './components/Pages/Sponsors/Sponsors';
+import Landing from './components/Pages/Landing/Landing';
+import Mailing from './components/Pages/MailingList/MailingList';
+import Organisers from './components/Pages/Organisers/Organisers';
+import Coordinators from './components/Pages/Coordinators/Coordinators';
+import CodebarArea from './components/Pages/CodebarArea/CodebarArea';
 import Footer from './components/Footer/Footer';
 function App() {
   return (

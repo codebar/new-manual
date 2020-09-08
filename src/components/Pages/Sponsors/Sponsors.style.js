@@ -6,7 +6,7 @@ const lightGrey = 'rgba(244, 244, 244, 1)';
 const lineHeight = 'line-height: 2rem';
 
 const SponsorSection = styled.section`
-  // margin: 4rem 9rem;
+  margin: 4rem 9rem;
   // min-width: 100vw;
   @media screen and (max-width: 400px) {
     // margin: 0 auto;
@@ -54,7 +54,7 @@ const ReasonText = styled.p`
 const WhyText = styled.p`
   font-size: 1.15rem;
   ${fontWeight}
-  font-weight: 400;
+  // font-weight: 400;
   line-height: 2.5rem;
 `;
 const WhyEmphasise = styled.span`
@@ -71,9 +71,18 @@ const FoodOptions = styled.section`
 const Option = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: yellow;
+  padding: 2rem;
 `;
 
-const OptionText = styled.p``;
+const OptionImg = styled.img`
+  max-width: 8rem;
+  padding: 2rem 0;
+`;
+
+const OptionText = styled.p`
+  line-height: 2rem;
+`;
 
 const OptionSub = styled.h4`
   ${zeroMargin}
@@ -134,7 +143,7 @@ const SponsoredCompanies = styled.div`
 `;
 
 const CompaniesLogo = styled.img`
-  max-width: 7rem;
+  max-width: 6rem;
   margin: auto;
   padding: 1rem 0;
 `;
@@ -158,6 +167,10 @@ const CompaniesSection = styled.section`
   margin: 0;
 `;
 
+const CompaniesText = styled.div`
+  margin: 4rem 9rem;
+`;
+
 export {
   SponsorSection,
   ReasonWrapper,
@@ -172,6 +185,7 @@ export {
   Option,
   OptionText,
   OptionSub,
+  OptionImg,
   PackagesWrapper,
   Package,
   PackagePrice,
@@ -185,4 +199,5 @@ export {
   BronzeGrid,
   CompaniesSubtitle,
   CompaniesSection,
+  CompaniesText,
 };
