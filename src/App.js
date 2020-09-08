@@ -22,7 +22,7 @@ function App() {
             <Route path="/sponsors" component={Sponsors} />
             <Route path="/organisers" component={Organisers} />
             <Route path="/coordinators" component={Coordinators} />
-            <Route path="/mailing" component={Mailing} />
+            <Route path="/mailing-list" component={Mailing} />
             <Route path="/codebar-area" component={CodebarArea} />
           </Switch>
         </BrowserRouter>
