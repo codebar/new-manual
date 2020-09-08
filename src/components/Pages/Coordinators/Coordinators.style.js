@@ -16,15 +16,13 @@ const Pink = styled.span`
 
 `
 const NumberedList = styled.ol`
-    color: ${black}; //remove this line
-    margin: 4rem;
+    // margin: 4rem;
     
 
 `
 const NumberedListItem = styled.li`
     list-style-type: none;
     display: inline-block;
-    // margin-bottom: 5%;
     vertical-align: middle;
     padding: 2.5% 0;
     
@@ -38,9 +36,7 @@ const NumberedListItemAlt = styled.li`
 const Div = styled.div`
     display: flex;
     flex-direction: row;
-
 `
-// wrap the numbers in a span, then apply styling//
 
 export {
     Pink,
