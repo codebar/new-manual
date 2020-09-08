@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { device } from '../../globalstyle/mediaQueries';
-import { fontWeight } from '../../globalstyle/GlobalStyle'
+import { device } from '../../../globalstyle/mediaQueries';
+import { fontWeight } from '../../../globalstyle/GlobalStyle'
 
 const black = '#000000';
 const lightGrey = '#EDEDED';
@@ -163,7 +163,6 @@ const Bold =styled.span`
 `
 
 const GreyWrapper = styled.div`
-    color: ${black};
     background-color: ${lightGrey};
     text-align: justify;
     @media ${device.mobileL}{
@@ -171,11 +170,11 @@ const GreyWrapper = styled.div`
     }
     @media ${device.tablet}{
         padding: 2rem 4rem 2rem 4rem;
-        margin: 4rem 4rem 4rem 4rem;
+        margin: 4rem 4rem 0 4rem;
     }
     @media ${device.laptop}{
         padding: 3rem 2rem 2rem 2rem;
-        margin: 4rem 0 4rem 0;
+        margin: 4rem 0 0 0;
     }
 
 `
