@@ -1,5 +1,5 @@
 import React from "react";
-import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, Subheading, SubheadingAlt, EventList, Bold, ListItem, InternalLink, InternaLinkWrapper } from './Organisers.style';
+import {Wrapper, IntroText, AnythingElseWrapper, AnythingElseText, EventWrapper, GreyWrapper, Heading, HeadingAlt, Subheading, SubheadingAlt, EventList, Bold, ListItem, InternalLink, InternaLinkWrapper } from './Organisers.style';
 import { Title } from '../../globalstyle/GlobalStyle';
 import CodebarArea from '../CodebarArea/CodebarArea';
 import { Route } from 'react-router-dom';
@@ -27,21 +27,21 @@ const Organisers = () => {
                 </InternaLinkWrapper>
       
                 <IntroText>
-                    <Subheading>What do I need from a host?</Subheading>
-                    <h3> Space</h3>
+                    <Heading>What do I need from a host?</Heading>
+                    <Subheading> Space</Subheading>
                     <p>The requirements are different depending on the city. A workshop can be as small as 5-6 people or as big as 80 - or more if you have enough people helping out! Just make sure that the venue details are configured properly in the application before you send out any invitations.</p>
 
-                    <h3>Desks and chairs</h3>
+                    <Subheading>Desks and chairs</Subheading>
                     <p>Make sure there are enough tables and chairs for everyone.</p>
 
-                    <h3>WiFi and power</h3>
+                    <Subheading>WiFi and power</Subheading>
                     <p>The venue needs to have a fairly good and stable internet connection and enough power sockets for all the student laptops.</p>
 
                     <p>If it is possible please ask the host to label one of their toilets as gender neutral. We recommend using this sign.</p>
                 </IntroText>
 
                 <GreyWrapper>
-                    <Subheading>Anything else?</Subheading>
+                    <HeadingAlt>Anything else?</HeadingAlt>
 
                     <AnythingElseText><Bold>Students and coaches</Bold> We aim to have double the amount of students to coaches, and try to pair up 2 students who are working on the same tutorial with their assigned coach.</AnythingElseText>
 
@@ -49,7 +49,7 @@ const Organisers = () => {
 
                     <AnythingElseText>Not all companies are able to provide both space and food. If you need help finding a sponsor let us know.</AnythingElseText>
 
-                    <h4>Announcing workshops and sending out invitations</h4>
+                    <SubheadingAlt>Announcing workshops and sending out invitations</SubheadingAlt>
                     <AnythingElseText>You should aim to list your events at least a week before they take place to give people time to learn about and sign up to the event. Give a longer lead time for new chapters. When creating an event, you should make sure to not set it as invitable unless registrations are open.</AnythingElseText>
 
                     <AnythingElseText>Anyone signed up to codebar will be able to RSVP to the event through the workshop page but only people subscribed to your chapter will receive an email invitation.</AnythingElseText>
@@ -58,7 +58,7 @@ const Organisers = () => {
                 </GreyWrapper>
 
                 <EventWrapper>
-                    <Subheading>At the event</Subheading>
+                    <HeadingAlt>At the event</HeadingAlt>
                     <EventList>
                         <ListItem>As people arrive at the event check them in through the workshop admin page, and double check what tutorials the students have signed up for so that you can pair them up prior to the event. Also, make sure you give them their name tag. Doing all of this will enable you to track demand and enforce the codebar attendance policy. The coaches will also only start appearing in the coach ranking after their attendance is confirmed.</ListItem>
                         <ListItem> Make sure the WiFi details are displayed in prominent places.</ListItem>
@@ -67,14 +67,14 @@ const Organisers = () => {
                     </EventList>
                 </EventWrapper>
                 <GreyWrapper>
-                    <h3>Pairing</h3>
+                    <Subheading>Pairing</Subheading>
                     <p>As you start pairing students and coaches, it is important to let the coach pick what they want to teach as we have coaches of all experience levels attending. We normally do this by saying the name of 2 students doing the same tutorial, then let a coach say they’ll help.</p>
                     <p>If you have a lot of attendees, then you might need multiple organisers to help sign students in and note their planned topics of study. In these situations, a shared Google Doc can be useful to allow multiple contemporaneous editors. A common method is to list the students who’ve been signed in, in order of how difficult their subject is to find coaches to teach, from most difficult (e.g. advanced Java, PHP, iOS, testing, etc) to easiest (beginner HTML). You can then group students who are working on the same thing, and indicate a group by inserting line-breaks between groups.</p>
 
-                    <h3>After the event</h3>
+                    <Subheading>After the event</Subheading>
                     <p>Encourage them to come to any social events following the workshop. Usually people don’t get that much time to interact at the events and this enables them to expand their tech social circle, find out about opportunities and meet like-minded people.</p>
 
-                    <h3>Dealing with problems</h3>
+                    <Subheading>Dealing with problems</Subheading>
                     <p>Part of your job as organiser is to make sure that everyone feels welcome and comfortable. This might occasionally mean that you have to deal with small issues or potentially ban people from attending future codebar events.</p>
                     <p>This is not something that anyone enjoys doing, however, our attendees are our priority and we need to make sure that codebar’s Code of Conduct and Eligibility Criteria are enforced.</p>
                     <p>If someone comes to you with a complaint, act on it promptly. If attendees are involved, speak to them in a private area where you cannot be overheard, or send them an email after the event. When passing on negative feedback about a coach, you may need to ask the student’s permission first, as this information can be identifying.</p>

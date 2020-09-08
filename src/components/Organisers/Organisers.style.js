@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { device } from '../../globalstyle/mediaQueries';
+import { fontWeight } from '../../globalstyle/GlobalStyle'
 
 const black = '#000000';
-const white = '#FFFFFF';
 const lightGrey = '#EDEDED';
 const pink = '#FF036A';
 
@@ -11,35 +12,52 @@ const textDecoration = 'text-decoration: none;';
 const Wrapper = styled.div`
     color: ${black}
     width: 80%;
+    ${fontWeight};
 `
 
 const IntroText = styled.div`
-    color: ${black};
     margin: 5rem 5rem 4rem 5rem;
+    text-align: justify;
     max-width: 70%;
-        @media screen and (max-width:400px){
-        font-size: 1rem;
+    font-size: 1rem;
+
+    @media ${device.mobileS}{
         margin: 1rem 0.8rem 3rem 0.8em;
         max-width: 90%;
-        text-align: justify;
     }
-
+    @media ${device.tablet}{
+        margin: 1rem 2rem 3rem 2em;
+    }
 `
 const Heading = styled.h1`
-    font-weight: 600;
+    ${fontWeight};
     text-align: center;
     margin-bottom: 4rem;
-        @media screen and (max-width:400px){
-            font-size: 1.6rem;
+        @media ${device.mobileS}{
+            font-size: 1.5rem;
             margin-bottom: 1rem;
+            margin-left: 1rem;
+        }
+        @media ${device.tablet}{
+            margin-bottom: 2rem;
         }
 `
-
+const HeadingAlt = styled.h1`
+    ${fontWeight};
+    text-align: left;
+    @media ${device.mobileS}{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+`
 const InternalLink = styled(Link)`
         color: ${pink};
         ${textDecoration}
         text-decoration: none;
         margin-right: 2em;
+        @media ${device.tablet}{
+            font-size: 1rem;
+        }
 `
 
 const InternaLinkWrapper = styled.div`
@@ -48,46 +66,58 @@ const InternaLinkWrapper = styled.div`
         margin-right: 10rem;
         margin-left: 10rem;
         justify-content: space-between;
-        @media screen and (max-width:400px){
+        @media ${device.mobileS}{
+            margin-left: 2rem;
+            margin-right: 0;
             flex-direction: column;
             text-align: center;
-            margin-left: 0;
-            margin-right: 0;
-            max-width: 90%;
             font-size: 0.7rem;
+        }
+        @media ${device.tablet}{
+            flex-direction: row;
         }
 `
 
-const Subheading = styled.h2`
-    font-weight: 550;
-    
-    color: ${black};
-        @media screen and (max-width:400px){
-        font-size: 1.4rem;
+const Subheading = styled.h3`
+    font-weight: 400;
+    @media ${device.mobileS}{
         margin-top: 1rem;
-        text-align: center;
     }
 `
-const SubheadingAlt = styled.h2`
-    font-weight: 550;
-    color: ${white};
+const SubheadingAlt = styled.h3`
+    font-weight: 500;
+
 `
 const AnythingElseWrapper = styled.div`
     background-color: ${lightGrey};
     width: 100%;
     padding: 4rem 6rem 4rem 6rem;
-        @media screen and (max-width:400px){
+    text-align: justify;
+        @media ${device.mobileS}{
             font-size: 0.9rem;
             padding: 1rem 1rem 1rem 1em;
             max-width: 90%;
-            text-align: justify;
+        }
+        @media ${device.tablet}{
+            padding: 4rem 0rem 4rem 0rem;
+            width: 100%;
         }
 `
 
 const AnythingElseText = styled.p`
-    max-width: 90%;
-    @media screen and (max-width: 400px){
+    @media ${device.mobileS}{
         margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+    @media ${device.mobileL}{
+        max-width: 
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+    @media ${device.tablet}{
+        max-width: 100%;
         padding-bottom: 1rem;
     }
 `
@@ -95,15 +125,25 @@ const EventWrapper = styled.div`
     color: ${black};
     padding: 2rem 4rem 2rem 4rem;
     margin: 2rem 3rem 4rem 3rem;
-        @media screen and (max-width: 400px){
-        margin: 0 0.5rem 2rem 0.5rem;
-        padding: 2rem 0 2rem 1rem;
-        line-height: 1.5;
+        @media ${device.mobileS}{
+            margin: 0 0.5rem 2rem 0.5rem;
+            padding: 2rem 0 2rem 1rem;
+            line-height: 1.5;
+        }
+        @media ${device.mobileS}{
+            margin: 0 1.5rem 2rem 1.5rem;
+            text-align: justify;
+            line-height: 1.5;
+        }
+    
+        @media ${device.tablet}{
+            padding: 2rem 1rem 2rem 2rem;
+        }
 `
 
 const EventList = styled.ul`
     list-style-type: circle;
-    @media screen and (max-width: 500px){
+    @media ${device.mobileS}{
         padding: 0 0.5rem 0 0.5rem;
         text-align: justify;
         line-height: 1.5;
@@ -111,7 +151,7 @@ const EventList = styled.ul`
 `
 
 const ListItem = styled.li`
-    @media screen and (max-width: 500px){
+    @media ${device.mobileS}{
         margin: 0 0 1rem 0;
     }
 `
@@ -125,16 +165,19 @@ const Bold =styled.span`
 const GreyWrapper = styled.div`
     color: ${black};
     background-color: ${lightGrey};
-    padding-top: 2rem;
-    padding: 5rem 5rem 4rem 5rem;
-    @media screen and (max-width: 500px){
-        // margin: 0 auto;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-        line-height: 1.5;
-        text-align: justify;
-        padding: 1rem;
+    text-align: justify;
+    @media ${device.mobileL}{
+        padding: 2rem;
     }
+    @media ${device.tablet}{
+        padding: 2rem 4rem 2rem 4rem;
+        margin: 4rem 4rem 4rem 4rem;
+    }
+    @media ${device.laptop}{
+        padding: 3rem 2rem 2rem 2rem;
+        margin: 4rem 0 4rem 0;
+    }
+
 `
 
 
@@ -145,7 +188,8 @@ export {
     AnythingElseText,
     EventWrapper, 
     GreyWrapper, 
-    Heading, 
+    Heading,
+    HeadingAlt,
     Subheading, 
     SubheadingAlt,
     EventList,

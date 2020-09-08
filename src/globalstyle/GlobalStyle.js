@@ -167,6 +167,7 @@ export {
     ListItem,
     Bold, 
     InternalLink,
-    InternaLinkWrapper
+    InternaLinkWrapper, 
+    fontWeight
 };
 
