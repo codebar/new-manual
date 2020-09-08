@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import {
-  primaryBlueColor,
-  primaryPinkColor,
-  primaryGreenColor,
-  primaryDarkgreyColor,
-} from '../../globalstyle/GlobalStyle';
+// import {
+//   primaryBlueColor,
+//   primaryPinkColor,
+//   primaryGreenColor,
+//   primaryDarkgreyColor,
+// } from '../../globalstyle/GlobalStyle';
 import { COLORS } from '../../globalstyle/colors';
 
 const Logo = styled.img``;
