@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<footer
+  className="sc-AxjAm bATUzf"
+>
+  <div
+    className="sc-AxiKw hhrfxw"
+  >
+    <p
+      className="sc-AxhCb kqIPop"
+    >
+      send us email at
+    </p>
+    <a
+      className="sc-AxirZ elNzqL email"
+      href="mailto:hello@codebar.io"
+    >
+      hello@codebar.io
+    </a>
+    <p
+      className="sc-AxhCb kqIPop charityNo"
+    >
+      Registered UK and Wales charity no. 1187776
+    </p>
+    <p
+      className="sc-AxhCb kqIPop"
+    >
+      © 2020 codebar
+    </p>
+  </div>
+  <div
+    className="sc-AxhUy kMyssT"
+  >
+    <a
+      className="sc-AxheI fniENP"
+      href="https://slack.codebar.io/"
+      target="_blank"
+    >
+      <img
+        className="sc-AxgMl hMSiDE"
+        src="slack-logo.svg"
+      />
+    </a>
+    <a
+      className="sc-AxheI fniENP"
+      href="https://github.com/codebar"
+      target="_blank"
+    >
+      <img
+        alt="github-logo"
+        className="sc-AxgMl hMSiDE"
+        src="github-logo.svg"
+      />
+    </a>
+    <a
+      className="sc-AxheI fniENP"
+      href="https://twitter.com/codebar"
+      target="_blank"
+    >
+      <img
+        alt="twitter-logo"
+        className="sc-AxgMl hMSiDE"
+        src="twitter-logo.svg"
+      />
+    </a>
+    <a
+      className="sc-AxheI fniENP"
+      href="https://www.facebook.com/codebarHQ"
+      target="_blank"
+    >
+      <img
+        alt="facebook-logo"
+        className="sc-AxgMl hMSiDE"
+        src="facebook-logo.svg"
+      />
+    </a>
+  </div>
+</footer>
+`;

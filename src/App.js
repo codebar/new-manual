@@ -15,7 +15,7 @@ function App() {
     <>
       <GlobalStyle>
         <BrowserRouter>
-          <Navbar />
+          {/* <Navbar /> */}
           <Switch>
             <Route path="/" component={Landing} exact={true} />
             <Route path="/about" component={About} />
@@ -26,7 +26,7 @@ function App() {
             <Route path="/codebar-area" component={CodebarArea} />
           </Switch>
         </BrowserRouter>
-        <Footer />
+        {/* <Footer /> */}
       </GlobalStyle>
     </>
   );

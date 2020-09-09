@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<nav
+  className="sc-AxhUy bYjeWk"
+>
+  <a
+    className="sc-AxhCb kITrgR logoContainer"
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="codebar-logo"
+      className="sc-AxjAm StDqN logo"
+      src="website-logo.png"
+    />
+  </a>
+  <a
+    className="sc-AxhCb kITrgR About"
+    href="/about"
+    onClick={[Function]}
+  >
+    About
+  </a>
+  <a
+    className="sc-AxhCb kITrgR Sponsors"
+    href="/sponsors"
+    onClick={[Function]}
+  >
+    Sponsors
+  </a>
+  <a
+    className="sc-AxhCb kITrgR Organisers"
+    href="/organisers"
+    onClick={[Function]}
+  >
+    Organisers
+  </a>
+  <a
+    className="sc-AxirZ hYzhrQ Codebar"
+    href="https://codebar.io/"
+    target="_blank"
+  >
+    codebar.io
+  </a>
+  <a
+    className="sc-AxiKw hncjQH Donate"
+    href="https://codebar.enthuse.com/donate/#!/"
+    target="_blank"
+  >
+    Donate
+  </a>
+</nav>
+`;
