@@ -6,7 +6,7 @@ import { device } from '../../globalstyle/mediaQueries';
 const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
-    position: fixed;
+    // position: fixed;
     // top: 15px;
     padding: 2.2rem;
     color: #4BAFFF;
