@@ -26,7 +26,7 @@ const Footer = () => {
         <FooterText className="charityNo">
           Registered UK and Wales charity no. 1187776
         </FooterText>
-        <FooterTextLink to="/mailing-list">Mailing List Policy </FooterTextLink>
+        {/* <FooterTextLink to="/mailing-list">Mailing List Policy </FooterTextLink> */}
         <FooterText>© 2020 codebar</FooterText>
       </FooterTextWrapper>
       <FooterSocials>
