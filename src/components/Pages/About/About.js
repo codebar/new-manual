@@ -1,14 +1,9 @@
 import React from 'react';
 import {
   Heading,
-  Subheading,
-  VolunteerText,
-  Img,
   Contentwrapper,
   ContentwrapperAlt,
   Text,
-  TextAlt,
-  SponsorText,
   TextWrapper,
   AboutWrapper,
 } from './About.style';
@@ -21,18 +16,18 @@ const About = () => {
       <AboutWrapper>
         <Contentwrapper>
           <Heading>We are codebar.</Heading>
-          <Subheading>
+          <Text>
             We are a registered charity that has been running weekly coding
             workshops since October 2013, with London as its first chapter.{' '}
-          </Subheading>
+          </Text>
 
-          <Subheading>
+          <Text>
             Since then we have expanded to running workshops in 19 different
             cities from Brighton to Manchester and Edinburgh to New York, and
             Berlin, Sydney, and the list goes on.
-          </Subheading>
+          </Text>
           {/* <Contentwrapper> */}
-          <Img src={require('../../../assets/workshop-1.jpg')} alt="workshop" />
+          {/* <Img src={require('../../../assets/workshop-1.jpg')} alt="workshop" /> */}
           <Text>
             We have coached over 7000 students, with new people attending our
             events every week and a long waiting list at our London events.
@@ -41,33 +36,33 @@ const About = () => {
             space, coaches and resources.
           </Text>
 
-          <TextAlt>
+          <Text>
             This in turn requires a substantial expansion in sponsorship
             investment so that we can not just run workshops across London
             smoothly, but also be able to provide help and support to our
             smaller chapters.
-          </TextAlt>
+          </Text>
           {/* </Contentwrapper> */}
 
           {/* <ContentwrapperAlt> */}
           <TextWrapper>
-            <SponsorText>
+            <Text>
               If you are a sponsor interested in helping get codebar started in
               your city, we’d be delighted to talk to you about how you can help
               with hosting and sponsoring regular events. All of codebar’s
               events are run on a volunteer basis, with every subject expert and
               coach giving their time for free.
-            </SponsorText>
-            <VolunteerText>
+            </Text>
+            <Text>
               All of codebar’s events are run on a volunteer basis, with every
               subject expert and coach giving their time for free.
-            </VolunteerText>
+            </Text>
           </TextWrapper>
 
-          <Img
+          {/* <Img
             src={require('../../../assets/uncodebar-5.jpeg')}
             alt="uncodebar-5"
-          />
+          /> */}
           {/* </ContentwrapperAlt> */}
         </Contentwrapper>
         <HowToHelp />
