@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import { device } from './mediaQueries';
 require('typeface-open-sans');
 
 const GlobalStyle = styled.body`
@@ -28,20 +29,47 @@ const textDecoration = 'text-decoration: none;';
 const Wrapper = styled.div`
     color: ${black}
     width: 80%;
-    @media screen and (max-width: 400px){
-        width: auto;
+    // @media screen and (max-width: 400px){
+    //     width: auto;
+    // }
+    @media ${device.mobileS}{
+        margin: 1rem 1rem 2rem 1rem;
+        
+    }
+    @media ${device.mobileL}{
+        width: 100%;
+        margin: 2rem 1.5rem 2rem 1.5rem;
+    }
+    @media ${device.tablet}{
+        margin: 2rem 1.5rem 2rem 1.5rem;
     }
 `
 
 const IntroText = styled.div`
     color: ${black};
-    margin: 5rem 5rem 4rem 5rem;
-    max-width: 70%;
-        @media screen and (max-width:400px){
-        font-size: 1rem;
+    // margin: 5rem 5rem 4rem 5rem;
+    // max-width: 70%;
+    //     @media screen and (max-width:400px){
+    //     font-size: 1rem;
+    //     margin: 1rem 0.8rem 3rem 0.8em;
+    //     max-width: 90%;
+    //     text-align: justify;
+    // }
+    line-height: 1.8;
+    text-align: justify;
+    @media ${device.mobileS}{
         margin: 1rem 0.8rem 3rem 0.8em;
-        max-width: 90%;
-        text-align: justify;
+    }
+    @media ${device.tablet}{
+        margin: 2rem 6rem 3rem 5rem;
+        width: 80%;
+    }
+    @media ${device.laptopL}{
+        margin: 5rem 5rem 3rem 6rem;
+        width: 80%;
+    }
+    @media ${device.desktop}{
+        margin: 5rem 5rem 3rem 8rem;
     }
 
 `
@@ -63,24 +91,42 @@ const InternalLink = styled(Link)`
 `
 
 const InternaLinkWrapper = styled.div`
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
+        // @media screen and (max-width:400px){
+        //     flex-direction: column;
+        //     text-align: center;
+        //     margin-left: 0;
+        //     margin-right: 0;
+        //     max-width: 90%;
+        //     font-size: 0.7rem;
+        // }
         display: flex;
         flex-direction: row;
-        margin-right: 10rem;
-        margin-left: 10rem;
         justify-content: space-between;
-        @media screen and (max-width:400px){
+        @media ${device.mobileS}{
+            margin-left: 2rem;
+            margin-right: 0;
             flex-direction: column;
             text-align: center;
-            margin-left: 0;
-            margin-right: 0;
-            max-width: 90%;
-            font-size: 0.7rem;
+            font-size: 0.8rem;
+        }
+        @media ${device.tablet}{
+            flex-direction: row;
+        }
+        @media ${device.laptop}{
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+        @media ${device.laptopL}{
+            margin-right: 10rem;
+            margin-left: 10rem;
         }
 `
 
 const Heading = styled.h2`
     font-weight: 550;
-    
     color: ${black};
         @media screen and (max-width:400px){
         font-size: 1.4rem;
@@ -119,10 +165,24 @@ const ListWrapper = styled.div`
 
 const List = styled.ul`
     list-style-type: circle;
-    @media screen and (max-width: 500px){
-        padding: 0 0.5rem 0 0.5rem;
-        text-align: justify;
-        line-height: 1.5;
+    // @media screen and (max-width: 500px){
+    //     padding: 0 0.5rem 0 0.5rem;
+    //     text-align: justify;
+    //     line-height: 1.5;
+    // }
+    @media ${device.mobileS}{
+        max-width: 65%;
+    }
+    @media ${device.mobileL}{
+        max-width: 75%;
+        margin: 2rem 3.5rem 2rem 4.5rem;
+    }
+    @media ${device.tablet}{
+        max-width: 70%;
+        margin-left: 5rem;
+    }
+    @media ${device.laptopL}{
+        margin-left: 8rem;
     }
 `
 
@@ -141,8 +201,7 @@ const Bold =styled.span`
 const GreyWrapper = styled.div`
     color: ${black};
     background-color: ${lightGrey};
-    padding-top: 2rem;
-    padding: 5rem 5rem 4rem 5rem;
+    padding: 4rem 5rem 1rem 5rem;
     @media screen and (max-width: 500px){
         // margin: 0 auto;
         padding-right: 0.5rem;
@@ -167,6 +226,7 @@ export {
     ListItem,
     Bold, 
     InternalLink,
-    InternaLinkWrapper
+    InternaLinkWrapper, 
+    fontWeight
 };
 
