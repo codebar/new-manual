@@ -9,6 +9,10 @@ const FooterWrapper = styled.footer`
   margin: 0 -1rem 0 -1rem;
   color: white;
   bottom: 0;
+  @media (max-width: 400px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
 `;
 
 const FooterEmail = styled.a`
@@ -20,6 +24,10 @@ const FooterEmail = styled.a`
   color: white;
   width: 80%;
   padding-top: 0.75rem;
+  @media (max-width: 400px) {
+    width: 63%;
+    font-size: 1.5rem;
+  }
 `;
 
 const FooterTextWrapper = styled.div.attrs((props) => ({
@@ -33,16 +41,26 @@ const FooterTextWrapper = styled.div.attrs((props) => ({
   & .charityNo {
     padding-top: 2rem;
   }
+  @media (max-width: 400px) {
+    padding: 1rem;
+  }
 `;
 
 const FooterText = styled.p`
   margin: 0;
 `;
 
-const FooterSocials = styled.div``;
+const FooterSocials = styled.div`
+  @media (max-width: 400px) {
+    padding: 1rem 0;
+  }
+`;
 const FooterImg = styled.img`
   width: 2.5rem;
   padding: 0 1rem;
+  @media (max-width: 400px) {
+    width: 2rem;
+  }
 `;
 
 const FooterLink = styled.a``;
