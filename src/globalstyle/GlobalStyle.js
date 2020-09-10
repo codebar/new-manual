@@ -209,20 +209,20 @@ const GreyWrapper = styled.div`
 `;
 
 export {
-    navbar
-    GlobalStyle,
-    Wrapper,
-    IntroText,
-    AnythingElseWrapper,
-    AnythingElseText,
-    ListWrapper, 
-    GreyWrapper, 
-    Title, 
-    Heading, 
-    List,
-    ListItem,
-    Bold, 
-    InternalLink,
-    InternaLinkWrapper,
-    primaryBlueColor
+  GlobalStyle,
+  Wrapper,
+  IntroText,
+  AnythingElseWrapper,
+  AnythingElseText,
+  ListWrapper,
+  GreyWrapper,
+  Title,
+  Heading,
+  List,
+  ListItem,
+  Bold,
+  InternalLink,
+  InternaLinkWrapper,
+  primaryBlueColor,
+  fontWeight,
 };
