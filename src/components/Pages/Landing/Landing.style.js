@@ -131,7 +131,8 @@ const ValueSubtitle = styled.h4`
 `;
 
 const ValueText = styled.p`
-  ${zeroMargin}
+  // ${zeroMargin}
+  ${fontWeight}
 `;
 const ImageWrapper = styled.div``;
 

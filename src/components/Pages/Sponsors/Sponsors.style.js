@@ -11,7 +11,7 @@ const SponsorSection = styled.section`
   // min-width: 100vw;
   font-weight: lighter;
   @media screen and (max-width: 400px) {
-    margin: 0 0;
+    margin: 3rem 2rem 0 2rem;
   }
 `;
 
@@ -61,6 +61,10 @@ const WhyText = styled.p`
   ${fontWeight}
   // font-weight: 400;
   line-height: 2.5rem;
+  @media screen and (max-width: 400px) {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 `;
 const WhyEmphasise = styled.span`
 // ${fontWeight}
@@ -82,6 +86,10 @@ const Option = styled.div`
   background-color: ${lightGrey};
   border-radius: 1rem;
   padding: 2rem;
+
+  @media screen and (max-width: 400px) {
+    margin: 2rem 0;
+  }
 `;
 
 const OptionImg = styled.img`
@@ -136,7 +144,9 @@ const PackageBenefits = styled.ul`
 
 const SponsorsText = styled.p`
   color: ${textLightGrey};
-  line-height: 2rem;
+  @media screen and (max-width: 400px) {
+    line-height: 2rem;
+  }
 `;
 const SponsorTitles = styled.h1`
   ${fontWeight}
@@ -189,8 +199,9 @@ const CompaniesSection = styled.section`
 
 const CompaniesText = styled.div`
   margin: 4rem 9rem;
+  ${fontWeight}
   @media screen and (max-width: 400px) {
-    margin: 0;
+    margin: 2rem;
   }
 `;
 
