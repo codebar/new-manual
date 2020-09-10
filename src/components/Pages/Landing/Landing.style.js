@@ -9,6 +9,7 @@ const LandingWrapper = styled.section`
 `;
 const HeaderWrapper = styled.section`
   min-height: 80vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +22,11 @@ const HeaderText = styled.h1`
   font-size: 1.5rem;
   max-width: 50vw;
   line-height: 2.5rem;
+
+  @media (max-width: 400px) {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 `;
 
 const HeaderImg = styled.img`
@@ -30,6 +36,11 @@ const HeaderImg = styled.img`
 const LandingSubtitles = styled.h2`
   ${fontWeight}
   font-size: 2.5rem;
+  // margin: 2rem;
+  @media (max-width: 400px) {
+    font-size: 1.5rem;
+    // margin: 2rem;
+  }
 `;
 
 const LearnMore = styled.a`
@@ -42,14 +53,19 @@ const LearnMore = styled.a`
   color: white;
 `;
 
-const StatsWrapper = styled.section`
+const StatContainer = styled.section`
+  padding: 6rem 10rem;
+  @media (max-width: 400px) {
+    padding: 2rem;
+  }
+`;
+const StatsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0.5em 0.5em;
   grid-template-areas: '. .' '. .' '. .';
   justify-items: center;
-  margin: 3rem;
 `;
 const StatWrapper = styled.div`
   border-top: 1px solid black;
@@ -66,6 +82,10 @@ const Statistic = styled.p`
   font-weight: bolder;
   text-align: center;
   margin: 3rem 0 4.5rem 0;
+
+  @media (max-width: 400px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const ValuesWrapper = styled.section`
@@ -74,15 +94,27 @@ const ValuesWrapper = styled.section`
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 2em 2em;
   grid-template-areas: '. .' '. .' '. .' '. .' '. .';
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: '.';
+  }
 `;
 
 const ValueWrapper = styled.div`
-padding: 10rem 0;
+  padding: 10rem 0;
+
+  @media (max-width: 400px) {
+    padding: 3rem 0;
+  }
 `;
 
 const ValueContainer = styled.section`
   background-color: rgba(244, 244, 244, 1);
   padding: 6rem 10rem;
+  @media (max-width: 400px) {
+    padding: 2rem;
+  }
 `;
 
 const ValueNumber = styled.h3`
@@ -99,13 +131,15 @@ const ValueSubtitle = styled.h4`
 `;
 
 const ValueText = styled.p`
-  ${zeroMargin}
+  // ${zeroMargin}
+  ${fontWeight}
 `;
 const ImageWrapper = styled.div``;
 
 const ValuesBold = styled.span`
   font-weight: normal;
 `;
+
 export {
   LandingWrapper,
   HeaderWrapper,
@@ -125,4 +159,5 @@ export {
   ValueText,
   ImageWrapper,
   ValuesBold,
+  StatContainer,
 };
