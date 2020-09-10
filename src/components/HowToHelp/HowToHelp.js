@@ -2,8 +2,7 @@ import React from 'react';
 import {
   HowtoHelpWrapper,
   HowToHelpSubtitle,
-  SponsorsBtn,
-  OrganisersBtn,
+  HowToHelpBtn,
   HowToHelpBtnWrapper,
 } from './HowToHelp.style';
 
@@ -12,8 +11,8 @@ const HowToHelp = () => {
     <HowtoHelpWrapper>
       <HowToHelpSubtitle>How can you help?</HowToHelpSubtitle>
       <HowToHelpBtnWrapper>
-        <SponsorsBtn to="/sponsors">Sponsors </SponsorsBtn>
-        <OrganisersBtn to="/organisers">Organisers</OrganisersBtn>
+        <HowToHelpBtn to="/sponsors">Sponsors</HowToHelpBtn>
+        <HowToHelpBtn to="/organisers">Organisers</HowToHelpBtn>
       </HowToHelpBtnWrapper>
     </HowtoHelpWrapper>
   );

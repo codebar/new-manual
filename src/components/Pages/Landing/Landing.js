@@ -18,6 +18,7 @@ import {
   ValueText,
   ImageWrapper,
   ValuesBold,
+  StatContainer,
 } from './Landing.style';
 import HowToHelp from '../../HowToHelp/HowToHelp';
 
@@ -116,34 +117,35 @@ const Landing = () => {
         </ValuesWrapper>
       </ValueContainer>
 
-      <LandingSubtitles>Our impact so far..</LandingSubtitles>
-      <StatsWrapper>
-        <StatWrapper>
-          <StatTitle>Founded</StatTitle>
-          <Statistic>2013</Statistic>
-        </StatWrapper>
-        <StatWrapper>
-          <StatTitle>Chapters</StatTitle>
-          <Statistic>19</Statistic>
-        </StatWrapper>
-        <StatWrapper>
-          <StatTitle>Students</StatTitle>
-          <Statistic>7075</Statistic>
-        </StatWrapper>
-        <StatWrapper>
-          <StatTitle>Coaches</StatTitle>
-          <Statistic>2831</Statistic>
-        </StatWrapper>
-        <StatWrapper>
-          <StatTitle>Workshops</StatTitle>
-          <Statistic>807</Statistic>
-        </StatWrapper>
-        <StatWrapper>
-          <StatTitle>Returning members</StatTitle>
-          <Statistic>42.98%</Statistic>
-        </StatWrapper>
-      </StatsWrapper>
-
+      <StatContainer>
+        <LandingSubtitles>Our impact so far..</LandingSubtitles>
+        <StatsWrapper>
+          <StatWrapper>
+            <StatTitle>Founded</StatTitle>
+            <Statistic>2013</Statistic>
+          </StatWrapper>
+          <StatWrapper>
+            <StatTitle>Chapters</StatTitle>
+            <Statistic>19</Statistic>
+          </StatWrapper>
+          <StatWrapper>
+            <StatTitle>Students</StatTitle>
+            <Statistic>7075</Statistic>
+          </StatWrapper>
+          <StatWrapper>
+            <StatTitle>Coaches</StatTitle>
+            <Statistic>2831</Statistic>
+          </StatWrapper>
+          <StatWrapper>
+            <StatTitle>Workshops</StatTitle>
+            <Statistic>807</Statistic>
+          </StatWrapper>
+          <StatWrapper>
+            <StatTitle>Returning members</StatTitle>
+            <Statistic>42.98%</Statistic>
+          </StatWrapper>
+        </StatsWrapper>
+      </StatContainer>
       <HowToHelp />
     </LandingWrapper>
   );
