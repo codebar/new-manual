@@ -159,6 +159,9 @@ const SponsorTitles = styled.h1`
 
 const GreyedBackground = styled.div`
   background-color: ${lightGrey};
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-top: 1rem;
 `;
 
 const SponsoredCompanies = styled.div`
