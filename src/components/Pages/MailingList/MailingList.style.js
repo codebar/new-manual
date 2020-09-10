@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../../../globalstyle/mediaQueries.js';
+import { device } from '../../../globalstyle/mediaQueries';
 
 const black = '#000000';
 const blue = '4BAFFF';
