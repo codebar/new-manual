@@ -2,53 +2,77 @@
 
 exports[`matches snapshot 1`] = `
 <nav
-  className="sc-AxhUy bYjeWk"
+  className="sc-fzokOt elRpbE"
 >
   <a
-    className="sc-AxhCb kITrgR logoContainer"
+    className="sc-fzoLag cmtKpX logoContainer"
     href="/"
     onClick={[Function]}
   >
     <img
       alt="codebar-logo"
-      className="sc-AxjAm StDqN logo"
+      className="sc-fznKkj lbPMLS logo"
       src="website-logo.png"
     />
   </a>
-  <a
-    className="sc-AxhCb kITrgR About"
-    href="/about"
+  <div
+    className="sc-fzqBZW bbFqsF"
     onClick={[Function]}
+    open={false}
   >
-    About
-  </a>
-  <a
-    className="sc-AxhCb kITrgR Sponsors"
-    href="/sponsors"
-    onClick={[Function]}
+    <div />
+    <div />
+    <div />
+  </div>
+  <ul
+    className="sc-fzqNJr iLhHCT"
+    open={false}
   >
-    Sponsors
-  </a>
-  <a
-    className="sc-AxhCb kITrgR Organisers"
-    href="/organisers"
-    onClick={[Function]}
-  >
-    Organisers
-  </a>
-  <a
-    className="sc-AxirZ hYzhrQ Codebar"
-    href="https://codebar.io/"
-    target="_blank"
-  >
-    codebar.io
-  </a>
-  <a
-    className="sc-AxiKw hncjQH Donate"
-    href="https://codebar.enthuse.com/donate/#!/"
-    target="_blank"
-  >
-    Donate
-  </a>
+    <li>
+      <a
+        className="sc-fzoLag cmtKpX About"
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </li>
+    <li>
+      <a
+        className="sc-fzoLag cmtKpX Sponsors"
+        href="/sponsors"
+        onClick={[Function]}
+      >
+        Sponsors
+      </a>
+    </li>
+    <li>
+      <a
+        className="sc-fzoLag cmtKpX Organisers"
+        href="/organisers"
+        onClick={[Function]}
+      >
+        Organisers
+      </a>
+    </li>
+    <li>
+      <a
+        className="sc-fznZeY htQcIw Codebar"
+        href="https://codebar.io/"
+        target="_blank"
+      >
+        codebar.io
+      </a>
+    </li>
+    <li>
+      <a
+        className="sc-fzoyAV jbtFyd Donate"
+        href="https://codebar.enthuse.com/donate/#!/"
+        target="_blank"
+      >
+        Donate
+      </a>
+    </li>
+  </ul>
 </nav>
 `;

@@ -8,7 +8,7 @@ import {
   ExtLink,
 } from './MailingList.style';
 
-const Mailing = () => {
+const MailingList = () => {
   return (
     <>
       <Wrapper>
@@ -62,4 +62,4 @@ const Mailing = () => {
   );
 };
 
-export default Mailing;
+export default MailingList;

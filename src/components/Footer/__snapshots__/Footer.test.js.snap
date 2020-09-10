@@ -2,10 +2,10 @@
 
 exports[`matches snapshot 1`] = `
 <footer
-  className="sc-AxjAm bATUzf"
+  className="sc-AxjAm hSxGtj"
 >
   <div
-    className="sc-AxiKw hhrfxw"
+    className="sc-AxiKw gGZwqz"
   >
     <p
       className="sc-AxhCb kqIPop"
@@ -13,7 +13,7 @@ exports[`matches snapshot 1`] = `
       send us email at
     </p>
     <a
-      className="sc-AxirZ elNzqL email"
+      className="sc-AxirZ dxkyxw email"
       href="mailto:hello@codebar.io"
     >
       hello@codebar.io
@@ -30,7 +30,7 @@ exports[`matches snapshot 1`] = `
     </p>
   </div>
   <div
-    className="sc-AxhUy kMyssT"
+    className="sc-AxhUy hrqUPW"
   >
     <a
       className="sc-AxheI fniENP"
@@ -38,7 +38,7 @@ exports[`matches snapshot 1`] = `
       target="_blank"
     >
       <img
-        className="sc-AxgMl hMSiDE"
+        className="sc-AxgMl deXZOn"
         src="slack-logo.svg"
       />
     </a>
@@ -49,7 +49,7 @@ exports[`matches snapshot 1`] = `
     >
       <img
         alt="github-logo"
-        className="sc-AxgMl hMSiDE"
+        className="sc-AxgMl deXZOn"
         src="github-logo.svg"
       />
     </a>
@@ -60,7 +60,7 @@ exports[`matches snapshot 1`] = `
     >
       <img
         alt="twitter-logo"
-        className="sc-AxgMl hMSiDE"
+        className="sc-AxgMl deXZOn"
         src="twitter-logo.svg"
       />
     </a>
@@ -71,7 +71,7 @@ exports[`matches snapshot 1`] = `
     >
       <img
         alt="facebook-logo"
-        className="sc-AxgMl hMSiDE"
+        className="sc-AxgMl deXZOn"
         src="facebook-logo.svg"
       />
     </a>
