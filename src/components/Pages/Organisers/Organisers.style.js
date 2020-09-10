@@ -77,7 +77,6 @@ const InternaLinkWrapper = styled.div`
         @media ${device.tablet}{
             flex-direction: row;
         }
-   
 `
 
 const Subheading = styled.h3`
@@ -112,7 +111,6 @@ const AnythingElseText = styled.p`
         padding-bottom: 1rem;
     }
     @media ${device.mobileL}{
-        max-width: 
         margin: 0 auto;
         padding-left: 0;
         padding-right: 0;
@@ -167,10 +165,9 @@ const Bold =styled.span`
 const GreyWrapper = styled.div`
     background-color: ${lightGrey};
     text-align: justify;
-    @media ${device.mobileL}{
-        padding: 2rem;
-
+    @media ${device.mobileS}{
         margin: 0 -1rem 0 -1rem;
+        padding: 2rem;
     }
     @media ${device.tablet}{
         padding: 2rem 3rem 2rem 3rem;
@@ -180,7 +177,6 @@ const GreyWrapper = styled.div`
         padding: 3rem 2rem 2rem 2rem;
         margin: 4rem -1rem 0 -1rem;
     }
-
 `
 
 
