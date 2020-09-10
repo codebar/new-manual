@@ -4,17 +4,22 @@ const fontWeight = 'font-weight: lighter;';
 const zeroMargin = 'margin: 0';
 const lightGrey = 'rgba(244, 244, 244, 1)';
 const lineHeight = 'line-height: 2rem';
+const textLightGrey = '#5b5b5b';
 
 const SponsorSection = styled.section`
-  margin: 4rem 9rem;
+  // margin: 4rem 9rem;
   // min-width: 100vw;
+  font-weight: lighter;
   @media screen and (max-width: 400px) {
-    // margin: 0 auto;
+    margin: 0;
   }
 `;
 
 const ReasonWrapper = styled.div`
   padding: 3rem 0;
+  @media screen and (max-width: 400px) {
+    padding: 0;
+  }
 `;
 
 const ReasonsWrapper = styled.section`
@@ -66,12 +71,16 @@ const FoodOptions = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 15em;
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Option = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: yellow;
+  background-color: ${lightGrey};
+  border-radius: 1rem;
   padding: 2rem;
 `;
 
@@ -113,7 +122,8 @@ const PackagePrice = styled.h3`
 `;
 
 const InReturnText = styled.p`
-  ${lineHeight}
+  color: ${textLightGrey};
+  line-height: 2rem;
 `;
 
 const PackageBenefit = styled.li`
@@ -124,10 +134,17 @@ const PackageBenefits = styled.ul`
   padding-left: 0;
 `;
 
-const SponsorsText = styled.p``;
+const SponsorsText = styled.p`
+  color: ${textLightGrey};
+  line-height: 2rem;
+`;
 const SponsorTitles = styled.h1`
   ${fontWeight}
   font-size: 3rem;
+  @media screen and (max-width: 400px) {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
 `;
 
 const GreyedBackground = styled.div`
@@ -146,6 +163,9 @@ const CompaniesLogo = styled.img`
   max-width: 6rem;
   margin: auto;
   padding: 1rem 0;
+  @media screen and (max-width: 400px) {
+    max-width: 3rem;
+  }
 `;
 
 const BronzeGrid = styled.div`
@@ -168,7 +188,7 @@ const CompaniesSection = styled.section`
 `;
 
 const CompaniesText = styled.div`
-  margin: 4rem 9rem;
+  // margin: 4rem 9rem;
 `;
 
 export {

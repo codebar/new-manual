@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import {
   primaryBlueColor,
 } from '../../globalstyle/GlobalStyle';
-import { COLORS } from '../../globalstyle/colors';
 
 const Logo = styled.img``;
 
