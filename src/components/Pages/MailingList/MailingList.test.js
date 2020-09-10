@@ -9,5 +9,5 @@ test('Renders MailingList Page', () => {
       <MailingList />
     </MemoryRouter>
   );
-  screen.getByText('Why should you sponsor a workshop?');
+  screen.getByText('Mailing List Policy');
 });

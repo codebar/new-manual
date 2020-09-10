@@ -9,7 +9,7 @@ const darkGrayAlt = '#3D4A54';
 const lightGray = '#F7F7F7';
 const black = '#000000';
 
-const AboutWrapper = styled.body`
+const AboutWrapper = styled.div`
   margin: 0;
   padding: 0;
 `;
