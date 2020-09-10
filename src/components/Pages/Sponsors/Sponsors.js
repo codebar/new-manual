@@ -126,10 +126,8 @@ const Sponsors = () => {
           different codebar chapters.
           <br />
           <br />
-          The minimum requirements for hosting an event incude providing: <br />
-          <WhyEmphasise>
-            desk space, power outlets, and a stable internet connection.
-          </WhyEmphasise>
+          The minimum requirements for hosting an event incude providing: desk
+          space, power outlets, and a stable internet connection.
           <br />
           <br />
           We encourage you to provide food and drinks. As our events typically

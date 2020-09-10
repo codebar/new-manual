@@ -7,11 +7,11 @@ const lineHeight = 'line-height: 2rem';
 const textLightGrey = '#5b5b5b';
 
 const SponsorSection = styled.section`
-  // margin: 4rem 9rem;
+  margin: 4rem 9rem;
   // min-width: 100vw;
   font-weight: lighter;
   @media screen and (max-width: 400px) {
-    margin: 0;
+    margin: 0 0;
   }
 `;
 
@@ -70,7 +70,7 @@ font-size: 1.5rem;
 const FoodOptions = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 15em;
+  gap: 0 10em;
   @media screen and (max-width: 400px) {
     grid-template-columns: 1fr;
   }
@@ -188,7 +188,10 @@ const CompaniesSection = styled.section`
 `;
 
 const CompaniesText = styled.div`
-  // margin: 4rem 9rem;
+  margin: 4rem 9rem;
+  @media screen and (max-width: 400px) {
+    margin: 0;
+  }
 `;
 
 export {
