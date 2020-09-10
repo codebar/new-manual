@@ -16,20 +16,16 @@ const primaryBlueColor = 'rgba(75, 175, 255, 1)';
 // const primaryGreenColor = '#19F3BE';
 
 const black = '#000000';
-const white = '#FFFFFF';
 const lightGrey = '#EDEDED';
 const pink = '#FF036A';
 
-const fontWeight = 'font-weight: lighter;';
+const fontWeight = 'font-weight: 380';
 
 const textDecoration = 'text-decoration: none;';
 
 const Wrapper = styled.div`
     color: ${black}
     width: 80%;
-    // @media screen and (max-width: 400px){
-    //     width: auto;
-    // }
     @media ${device.mobileS}{
         margin: 1rem 1rem 2rem 1rem;
         
@@ -45,16 +41,9 @@ const Wrapper = styled.div`
 
 const IntroText = styled.div`
   color: ${black};
-  // margin: 5rem 5rem 4rem 5rem;
-  // max-width: 70%;
-  //     @media screen and (max-width:400px){
-  //     font-size: 1rem;
-  //     margin: 1rem 0.8rem 3rem 0.8em;
-  //     max-width: 90%;
-  //     text-align: justify;
-  // }
   line-height: 1.8;
   text-align: justify;
+  font-weight: 300;
   @media ${device.mobileS} {
     margin: 1rem 0.8rem 3rem 0.8em;
   }
@@ -74,7 +63,7 @@ const Title = styled.h1`
   ${fontWeight};
   text-align: center;
   margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
   @media screen and (max-width: 400px) {
     font-size: 1.6rem;
     margin-bottom: 1rem;
@@ -88,7 +77,7 @@ const InternalLink = styled(Link)`
   margin-right: 4em;
 `;
 
-const InternaLinkWrapper = styled.div`
+const InternalLinkWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -105,6 +94,7 @@ const InternaLinkWrapper = styled.div`
   @media ${device.laptop} {
     margin-left: 4rem;
     margin-right: 4rem;
+    font-size: 1rem;
   }
   @media ${device.laptopL} {
     margin-right: 10rem;
@@ -112,14 +102,16 @@ const InternaLinkWrapper = styled.div`
   }
 `;
 
+
 const Heading = styled.h2`
-  font-weight: 550;
+  font-weight: 350;
   color: ${black};
   @media screen and (max-width: 400px) {
     font-size: 1.4rem;
     margin-top: 1rem;
     text-align: center;
   }
+
 `;
 const AnythingElseWrapper = styled.div`
   background-color: ${lightGrey};
@@ -152,11 +144,6 @@ const ListWrapper = styled.div`
 
 const List = styled.ul`
   list-style-type: circle;
-  // @media screen and (max-width: 500px){
-  //     padding: 0 0.5rem 0 0.5rem;
-  //     text-align: justify;
-  //     line-height: 1.5;
-  // }
   @media ${device.mobileS} {
     max-width: 65%;
   }
@@ -180,21 +167,25 @@ const ListItem = styled.li`
 `;
 
 const Bold = styled.span`
-  font-weight: bold;
+  font-weight: 500;
   color: ${pink};
 `;
 
 const GreyWrapper = styled.div`
-  color: ${black};
   background-color: ${lightGrey};
-  padding: 4rem 5rem 1rem 5rem;
-  @media screen and (max-width: 500px) {
-    // margin: 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 1rem;
+  text-align: justify;
+  font-weight: 300;
+  @media ${device.mobileS}{
+      margin: 0 -1rem 0 -1rem;
+      padding: 2rem;
+  }
+  @media ${device.tablet}{
+      padding: 2rem 3rem 2rem 3rem;
+      margin: 4rem -1rem 0 -1rem;
+  }
+  @media ${device.laptop}{
+      padding: 3rem 3rem 2rem 3rem;
+      margin: 2rem -1rem 0 -1rem;
   }
 `;
 
@@ -212,7 +203,7 @@ export {
   ListItem,
   Bold,
   InternalLink,
-  InternaLinkWrapper,
+  InternalLinkWrapper,
   primaryBlueColor,
   fontWeight,
 };

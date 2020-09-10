@@ -1,20 +1,16 @@
 import React from 'react';
 import {
-  Wrapper,
   IntroText,
-  AnythingElseWrapper,
   AnythingElseText,
   EventWrapper,
-  GreyWrapper,
   Heading,
   Subheading,
   SubheadingAlt,
   EventList,
   Bold,
   ListItem,
-  InternalLink,
-  InternaLinkWrapper,
 } from './Organisers.style';
+import { GreyWrapper, InternalLink, InternalLinkWrapper, Title } from '../../../globalstyle/GlobalStyle'
 import CodebarArea from '../CodebarArea/CodebarArea';
 import { Route } from 'react-router-dom';
 import Coordinators from '../Coordinators/Coordinators';
@@ -22,8 +18,8 @@ import Coordinators from '../Coordinators/Coordinators';
 const Organisers = () => {
   return (
     <>
-      <Heading>Organising workshops</Heading>
-      <InternaLinkWrapper>
+      <Title>Organising workshops</Title>
+      <InternalLinkWrapper>
         <InternalLink to={'/codebar-area'}>
           Bringing Codebar to your area<span>&#8599;</span>
         </InternalLink>
@@ -33,11 +29,11 @@ const Organisers = () => {
         </InternalLink>
         <Route path="/codebar-area" component={CodebarArea} exact />
         <Route path="/coordinator" component={Coordinators} />
-      </InternaLinkWrapper>
+      </InternalLinkWrapper>
 
       <IntroText>
-        <Subheading>What do I need from a host?</Subheading>
-        <h3> Space</h3>
+        <Heading>What do I need from a host?</Heading>
+        <Subheading> Space</Subheading>
         <p>
           The requirements are different depending on the city. A workshop can
           be as small as 5-6 people or as big as 80 - or more if you have enough
@@ -46,10 +42,10 @@ const Organisers = () => {
           invitations.
         </p>
 
-        <h3>Desks and chairs</h3>
+        <Subheading>Desks and chairs</Subheading>
         <p>Make sure there are enough tables and chairs for everyone.</p>
 
-        <h3>WiFi and power</h3>
+        <Subheading>WiFi and power</Subheading>
         <p>
           The venue needs to have a fairly good and stable internet connection
           and enough power sockets for all the student laptops.
@@ -85,7 +81,7 @@ const Organisers = () => {
           help finding a sponsor let us know.
         </AnythingElseText>
 
-        <h4>Announcing workshops and sending out invitations</h4>
+        <SubheadingAlt>Announcing workshops and sending out invitations</SubheadingAlt>
         <AnythingElseText>
           You should aim to list your events at least a week before they take
           place to give people time to learn about and sign up to the event.
@@ -149,7 +145,7 @@ const Organisers = () => {
         </EventList>
       </EventWrapper>
       <GreyWrapper>
-        <h3>Pairing</h3>
+        <Subheading>Pairing</Subheading>
         <p>
           As you start pairing students and coaches, it is important to let the
           coach pick what they want to teach as we have coaches of all
@@ -168,7 +164,7 @@ const Organisers = () => {
           indicate a group by inserting line-breaks between groups.
         </p>
 
-        <h3>After the event</h3>
+        <Subheading>After the event</Subheading>
         <p>
           Encourage them to come to any social events following the workshop.
           Usually people don’t get that much time to interact at the events and
@@ -176,7 +172,7 @@ const Organisers = () => {
           opportunities and meet like-minded people.
         </p>
 
-        <h3>Dealing with problems</h3>
+        <Subheading>Dealing with problems</Subheading>
         <p>
           Part of your job as organiser is to make sure that everyone feels
           welcome and comfortable. This might occasionally mean that you have to

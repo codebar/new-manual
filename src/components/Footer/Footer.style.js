@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const FooterWrapper = styled.footer`
   background-color: #3e4954;
@@ -39,6 +40,11 @@ const FooterText = styled.p`
   margin: 0;
 `;
 
+const FooterTextLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+`;
+
 const FooterSocials = styled.div``;
 const FooterImg = styled.img`
   width: 2.5rem;
@@ -55,4 +61,5 @@ export {
   FooterTextWrapper,
   FooterImg,
   FooterLink,
+  FooterTextLink
 };

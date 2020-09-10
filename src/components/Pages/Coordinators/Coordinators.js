@@ -8,7 +8,7 @@ import {
   ListItem,
   Bold,
   InternalLink,
-  InternaLinkWrapper,
+  InternalLinkWrapper,
 } from '../../../globalstyle/GlobalStyle';
 import {
   Pink,
@@ -25,7 +25,7 @@ const Coordinators = () => {
   return (
     <>
       <Title>Coordinators Guide </Title>
-      <InternaLinkWrapper>
+      <InternalLinkWrapper>
         <InternalLink to={'/organisers'}>
           Organising workshops<span>&#8599;</span>
         </InternalLink>
@@ -35,7 +35,7 @@ const Coordinators = () => {
         </InternalLink>
         <Route path="/organisers" component={Organisers} exact />
         <Route path="/codebar-area" component={CodebarArea} />
-      </InternaLinkWrapper>
+      </InternalLinkWrapper>
       <IntroText>
         <p>
           codebar workshops are a team effort and we really appreciate you
@@ -115,8 +115,6 @@ const Coordinators = () => {
             at the local chapter’s mailing list (e.g. brighton@codebar.io).
           </NumberedListItem>
         </NumberedList>
-      </GreyWrapper>
-      <GreyWrapper>
         <Heading>Student inductions</Heading>
         <NumberedList>
           <Pink>1</Pink>

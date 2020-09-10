@@ -7,11 +7,14 @@ import {
   FooterImg,
   FooterText,
   FooterLink,
+  FooterTextLink
 } from './Footer.style';
 import twitter from '../../assets/image/twitter-logo.svg';
 import slack from '../../assets/image/slack-logo.svg';
 import facebook from '../../assets/image/facebook-logo.svg';
 import github from '../../assets/image/github-logo.svg';
+// import Mailing from '../../components/Pages/MailingList';
+// import { link } from 'react-router-dom';
 const Footer = () => {
   return (
     <FooterWrapper>
@@ -23,6 +26,7 @@ const Footer = () => {
         <FooterText className="charityNo">
           Registered UK and Wales charity no. 1187776
         </FooterText>
+        <FooterTextLink to="/mailing-list">Mailing List Policy </FooterTextLink>
         <FooterText>© 2020 codebar</FooterText>
       </FooterTextWrapper>
       <FooterSocials>

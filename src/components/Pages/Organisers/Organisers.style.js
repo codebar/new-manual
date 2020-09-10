@@ -20,7 +20,7 @@ const IntroText = styled.div`
     text-align: justify;
     max-width: 70%;
     font-size: 1rem;
-
+    font-weight: 300;
     @media ${device.mobileS}{
         margin: 1rem 0.8rem 3rem 0.8em;
         max-width: 90%;
@@ -50,50 +50,23 @@ const HeadingAlt = styled.h1`
         margin-bottom: 1rem;
     }
 `
-const InternalLink = styled(Link)`
-        color: ${pink};
-        ${textDecoration}
-        text-decoration: none;
-        margin-right: 2em;
-        
-`
 
-const InternaLinkWrapper = styled.div`
-        display: flex;
-        flex-direction: row;
-        margin-right: 10rem;
-        margin-left: 10rem;
-        justify-content: space-between;
-        @media ${device.mobileS}{
-            margin-left: 2rem;
-            margin-right: 0;
-            flex-direction: column;
-            text-align: center;
-            font-size: 0.7rem;
-        }
-        @media ${device.mobileL}{
-            font-size: 1rem;
-        }
-        @media ${device.tablet}{
-            flex-direction: row;
-        }
-`
 
 const Subheading = styled.h3`
-    font-weight: 400;
+    font-weight: 450;
     @media ${device.mobileS}{
         margin-top: 1rem;
     }
 `
-const SubheadingAlt = styled.h3`
-    font-weight: 500;
+const SubheadingAlt = styled.h4`
+    font-weight: 400;
 
 `
 const AnythingElseWrapper = styled.div`
     background-color: ${lightGrey};
     width: 100%;
-    padding: 4rem 6rem 4rem 6rem;
     text-align: justify;
+    font-weight: 300;
         @media ${device.mobileS}{
             font-size: 0.9rem;
             padding: 1rem 1rem 1rem 1em;
@@ -103,9 +76,13 @@ const AnythingElseWrapper = styled.div`
             padding: 4rem 0rem 4rem 0rem;
             width: 100%;
         }
+        @media ${device.laptop}{
+            padding: 4rem 6rem 4rem 6rem;
+        }
 `
 
 const AnythingElseText = styled.p`
+    font-weight: 300;
     @media ${device.mobileS}{
         margin: 0 auto;
         padding-bottom: 1rem;
@@ -123,6 +100,7 @@ const AnythingElseText = styled.p`
 `
 const EventWrapper = styled.div`
     color: ${black};
+    font-weight: 300;
     padding: 2rem 4rem 2rem 4rem;
     margin: 2rem 3rem 4rem 3rem;
         @media ${device.mobileS}{
@@ -138,6 +116,9 @@ const EventWrapper = styled.div`
     
         @media ${device.tablet}{
             padding: 2rem 0.5rem 2rem 0.5rem;
+        }
+        @media ${device.laptop}{
+            padding: 2rem 1.5rem 2rem 2.5rem;
         }
 `
 
@@ -165,6 +146,7 @@ const Bold =styled.span`
 const GreyWrapper = styled.div`
     background-color: ${lightGrey};
     text-align: justify;
+    font-weight: 300;
     @media ${device.mobileS}{
         margin: 0 -1rem 0 -1rem;
         padding: 2rem;
@@ -194,6 +176,4 @@ export {
     EventList,
     ListItem,
     Bold, 
-    InternalLink,
-    InternaLinkWrapper
 };
