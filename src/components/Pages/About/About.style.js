@@ -10,117 +10,92 @@ const lightGray = '#F7F7F7';
 const black = '#000000';
 
 const AboutWrapper = styled.body`
-    margin: 0;
-    padding:0;
-`
+  margin: 0;
+  padding: 0;
+`;
 
 const Heading = styled.h1`
-font-weight: lighter;
-    line-height: 1.5;
-    font-size: 4rem;
-`
+  font-weight: lighter;
+  line-height: 1.5;
+  font-size: 4rem;
 
-const Subheading = styled.p`
-
-    // color: ${darkGray};
-    // font-weight: lighter;
-    // font-size: 1.5rem;
-    // margin-left: 4rem;
-    // line-height: 1.5;
-`
-
-const Introtext  = styled.div`
-    // max-width: 80%;
-    // @media (max-width: 400px) {
-    //     max-width: 900px;
-    //     }
-`
-
-const VolunteerText = styled.p`
-    color: ${black};
-`
-
-const Img = styled.img`
-    // height: 50%;
-    // width: 75%;
-    // border-radius: 40%;
-    // @media screen (max-width: 400px) {
-    //     width: 30%;
-    //     height: 30%;
-    //     }
-`
+  @media (max-width: 400px) {
+    font-size: 2rem;
+  }
+`;
+const Introtext = styled.div`
+  // max-width: 80%;
+  // @media (max-width: 400px) {
+  //     max-width: 900px;
+  //     }
+`;
 
 const Contentwrapper = styled.div`
-margin: 5rem;
-`
+  margin: 5rem;
+
+  @media (max-width: 400px) {
+    margin: 2rem;
+  }
+`;
 
 const ContentwrapperAlt = styled.div`
-    // display: grid;
-    // grid-template-columns: 2fr 1fr;
-    // grid-template-areas: 
-    //     "Img Text";
-    // margin-top: 6rem;
-    // margin-bottom: 4rem;
-    // margin-left: 2rem;
-    // align-items: center;
-    // grid-column-gap: 10px;
-`
-
+  // display: grid;
+  // grid-template-columns: 2fr 1fr;
+  // grid-template-areas:
+  //     "Img Text";
+  // margin-top: 6rem;
+  // margin-bottom: 4rem;
+  // margin-left: 2rem;
+  // align-items: center;
+  // grid-column-gap: 10px;
+`;
 
 const Text = styled.p`
-    // font-size: 1.4rem;
-    // text-align: right;
-    // line-height: 1.7;
-
-`
-const SponsorText = styled.p`
-    // font-size: 1.4rem;
-    // text-align: left;
-    // line-height: 1.7;
-    // width: 600px;
-`
-
-const TextAlt = styled.p`
-    // font-size: 1.4rem;
-    // width: 80vw;
-    // font-weight: normal;
-    // line-height: 1.7;
-    // text-align: right;
-    // grid-area: TextAlt;
-    // margin-left: 10rem;
-    // margin-top: 2rem;
-`
+  // font-size: 1.4rem;
+  // text-align: right;
+  line-height: 2rem;
+  font-weight: lighter;
+`;
 
 const TextWrapper = styled.div`
-    // display: flex;
-    // flex-direction: column;
-`
+  // display: flex;
+  // flex-direction: column;
+`;
 
 const SubheadingAlt = styled.h2`
-    color: ${black};
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 4rem;
-    margin: 0 auto;
-    grid-area: SubheadingAlt;
-`
+  color: ${black};
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 4rem;
+  margin: 0 auto;
+  grid-area: SubheadingAlt;
+`;
 
 const HowtoHelpWrapper = styled.div`
-    background-color: ${lightGray};
-    height: 40vh;
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 38px 20px;
-    grid-template-areas: 
-        'SubheadingAlt SubheadingAlt SubheadingAlt SubheadingAlt'
-        '. ButtonA ButtonB .'
-        '. . . .';
-`
+  background-color: ${lightGray};
+  height: 40vh;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 38px 20px;
+  grid-template-areas:
+    'SubheadingAlt SubheadingAlt SubheadingAlt SubheadingAlt'
+    '. ButtonA ButtonB .'
+    '. . . .';
+`;
 
-
-
-export { Heading, Subheading, Img, Introtext, VolunteerText , Contentwrapper, Text, TextAlt, ContentwrapperAlt, SponsorText, TextWrapper, SubheadingAlt, HowtoHelpWrapper, AboutWrapper, darkGrayAlt };
+export {
+  Heading,
+  Introtext,
+  Contentwrapper,
+  Text,
+  ContentwrapperAlt,
+  TextWrapper,
+  SubheadingAlt,
+  HowtoHelpWrapper,
+  AboutWrapper,
+  darkGrayAlt,
+};
