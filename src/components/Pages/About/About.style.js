@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { GlobalStyle } from '../../globalstyle/GlobalStyle';
 
 const fontWeight = 'font-weight: lighter;';
 const zeroMargin = 'margin: 0';
