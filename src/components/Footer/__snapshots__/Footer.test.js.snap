@@ -33,45 +33,45 @@ exports[`matches snapshot 1`] = `
     className="sc-AxhUy hrqUPW"
   >
     <a
-      className="sc-AxheI fniENP"
+      className="sc-Axmtr hBVTto"
       href="https://slack.codebar.io/"
       target="_blank"
     >
       <img
-        className="sc-AxgMl deXZOn"
+        className="sc-AxheI cunzYN"
         src="slack-logo.svg"
       />
     </a>
     <a
-      className="sc-AxheI fniENP"
+      className="sc-Axmtr hBVTto"
       href="https://github.com/codebar"
       target="_blank"
     >
       <img
         alt="github-logo"
-        className="sc-AxgMl deXZOn"
+        className="sc-AxheI cunzYN"
         src="github-logo.svg"
       />
     </a>
     <a
-      className="sc-AxheI fniENP"
+      className="sc-Axmtr hBVTto"
       href="https://twitter.com/codebar"
       target="_blank"
     >
       <img
         alt="twitter-logo"
-        className="sc-AxgMl deXZOn"
+        className="sc-AxheI cunzYN"
         src="twitter-logo.svg"
       />
     </a>
     <a
-      className="sc-AxheI fniENP"
+      className="sc-Axmtr hBVTto"
       href="https://www.facebook.com/codebarHQ"
       target="_blank"
     >
       <img
         alt="facebook-logo"
-        className="sc-AxgMl deXZOn"
+        className="sc-AxheI cunzYN"
         src="facebook-logo.svg"
       />
     </a>
