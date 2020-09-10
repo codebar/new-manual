@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import {
-  primaryBlueColor,
-} from '../../globalstyle/GlobalStyle';
+import { primaryBlueColor } from '../../globalstyle/GlobalStyle';
 
 const Logo = styled.img``;
 
@@ -22,7 +20,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   font-size: 1.15rem;
   padding: 0 1rem;
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     margin: 0;
   }
   & .logoContainer {
@@ -31,44 +29,44 @@ const Nav = styled.nav`
   }
   .logo {
     width: 10rem;
-  }`
+  }
+`;
 
-  const StyledBurger = styled.div`
-    width: 2rem;
-    height: 2rem;
-    padding: 2.2rem;
-    color: #4BAFFF;
-    right: 20px;
-    z-index: 20;
-    display: none;
-    @media (max-width: 800px) {
+const StyledBurger = styled.div`
+  width: 2rem;
+  height: 2rem;
+  padding: 2.2rem;
+  color: #4bafff;
+  right: 20px;
+  z-index: 20;
+  display: none;
+  @media (max-width: 800px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
     padding: 2rem 0 0 0;
-    }
-    div {
+  }
+  div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? 'white' : '#4BAFFF'};
+    background-color: ${({ open }) => (open ? 'white' : '#4BAFFF')};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
     &:nth-child(1) {
-        transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
     }
     &:nth-child(2) {
-        transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-        opacity: ${({ open }) => open ? 0 : 1};
+      transform: ${({ open }) => (open ? 'translateX(100%)' : 'translateX(0)')};
+      opacity: ${({ open }) => (open ? 0 : 1)};
     }
     &:nth-child(3) {
-        transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
- }
+  }
 `;
 
-
-  const NavWrapper = styled.ul`
+const NavWrapper = styled.ul`
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
@@ -80,7 +78,7 @@ const Nav = styled.nav`
     background-color: #4BAFFF;
     opacity: 95%;
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
     height: 100vh;
@@ -113,10 +111,17 @@ const DonateLink = styled.a`
 const MenuLink = styled(Link)`
   ${textDecoration}
   color: black;
-  @media (max-width: 800px){
-    color: white
+  @media (max-width: 800px) {
+    color: white;
   }
 `;
 
-export {Nav, NavWrapper, StyledBurger, Logo, DonateLink, ExternalLink, MenuLink }
-
+export {
+  Nav,
+  NavWrapper,
+  StyledBurger,
+  Logo,
+  DonateLink,
+  ExternalLink,
+  MenuLink,
+};
