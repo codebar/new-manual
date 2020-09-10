@@ -55,9 +55,7 @@ const InternalLink = styled(Link)`
         ${textDecoration}
         text-decoration: none;
         margin-right: 2em;
-        @media ${device.tablet}{
-            font-size: 1rem;
-        }
+        
 `
 
 const InternaLinkWrapper = styled.div`
@@ -73,9 +71,13 @@ const InternaLinkWrapper = styled.div`
             text-align: center;
             font-size: 0.7rem;
         }
+        @media ${device.mobileL}{
+            font-size: 1rem;
+        }
         @media ${device.tablet}{
             flex-direction: row;
         }
+   
 `
 
 const Subheading = styled.h3`
@@ -137,7 +139,7 @@ const EventWrapper = styled.div`
         }
     
         @media ${device.tablet}{
-            padding: 2rem 1rem 2rem 2rem;
+            padding: 2rem 0.5rem 2rem 0.5rem;
         }
 `
 
@@ -167,14 +169,16 @@ const GreyWrapper = styled.div`
     text-align: justify;
     @media ${device.mobileL}{
         padding: 2rem;
+
+        margin: 0 -1rem 0 -1rem;
     }
     @media ${device.tablet}{
-        padding: 2rem 4rem 2rem 4rem;
-        margin: 4rem 4rem 0 4rem;
+        padding: 2rem 3rem 2rem 3rem;
+        margin: 4rem -1rem 0 -1rem;
     }
     @media ${device.laptop}{
         padding: 3rem 2rem 2rem 2rem;
-        margin: 4rem 0 0 0;
+        margin: 4rem -1rem 0 -1rem;
     }
 
 `

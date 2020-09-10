@@ -6,6 +6,7 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: space-between;
   padding: 2rem 4rem 0 4rem;
+  margin: 0 -1rem 0 -1rem;
   color: white;
   bottom: 0;
 `;

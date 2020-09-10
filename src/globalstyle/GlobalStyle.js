@@ -74,6 +74,7 @@ const Title = styled.h1`
   ${fontWeight};
   text-align: center;
   margin-bottom: 4rem;
+  margin-top: 2rem;
   @media screen and (max-width: 400px) {
     font-size: 1.6rem;
     margin-bottom: 1rem;
@@ -88,17 +89,6 @@ const InternalLink = styled(Link)`
 `;
 
 const InternaLinkWrapper = styled.div`
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-between;
-  // @media screen and (max-width:400px){
-  //     flex-direction: column;
-  //     text-align: center;
-  //     margin-left: 0;
-  //     margin-right: 0;
-  //     max-width: 90%;
-  //     font-size: 0.7rem;
-  // }
   display: flex;
   flex-direction: row;
   justify-content: space-between;
