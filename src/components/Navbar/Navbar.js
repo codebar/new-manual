@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from '../../assets/image/website-logo.png';
-import { Nav, Logo, MenuLink, ExternalLink, DonateLink } from './Navbar.style';
+import { Nav, MenuLink } from './Navbar.style';
+import { Logo } from './Navbar.style';
+import Burger from './Burger';
+
+
 
 const Navbar = () => {
   return (
@@ -8,33 +12,9 @@ const Navbar = () => {
       <MenuLink to="/" className="logoContainer">
         <Logo className="logo" src={logo} alt="codebar-logo" />
       </MenuLink>
-      <MenuLink to="/about" className="About">
-        About
-      </MenuLink>
-      <MenuLink to="/sponsors" className="Sponsors">
-        Sponsors
-      </MenuLink>
-      <MenuLink to="/organisers" className="Organisers">
-        Organisers
-      </MenuLink>
-
-      <ExternalLink
-        href="https://codebar.io/"
-        className="Codebar"
-        target="_blank"
-      >
-        codebar.io
-      </ExternalLink>
-
-      <DonateLink
-        href="https://codebar.enthuse.com/donate/#!/"
-        className="Donate"
-        target="_blank"
-      >
-        Donate
-      </DonateLink>
+      <Burger />
     </Nav>
-  );
-};
+  )
+}
 
 export default Navbar;

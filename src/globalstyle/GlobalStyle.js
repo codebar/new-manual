@@ -11,7 +11,7 @@ const GlobalStyle = styled.div`
 `;
 
 // const primaryDarkgreyColor = 'rgba(67, 78, 89, 1)';
-// const primaryBlueColor = 'rgba(75, 175, 255, 1)';
+const primaryBlueColor = 'rgba(75, 175, 255, 1)';
 // const primaryPinkColor = 'rgba(255, 3, 106, 1)';
 // const primaryGreenColor = '#19F3BE';
 
@@ -209,19 +209,20 @@ const GreyWrapper = styled.div`
 `;
 
 export {
-  GlobalStyle,
-  Wrapper,
-  IntroText,
-  AnythingElseWrapper,
-  AnythingElseText,
-  ListWrapper,
-  GreyWrapper,
-  Title,
-  Heading,
-  List,
-  ListItem,
-  Bold,
-  InternalLink,
-  InternaLinkWrapper,
-  fontWeight,
+    navbar
+    GlobalStyle,
+    Wrapper,
+    IntroText,
+    AnythingElseWrapper,
+    AnythingElseText,
+    ListWrapper, 
+    GreyWrapper, 
+    Title, 
+    Heading, 
+    List,
+    ListItem,
+    Bold, 
+    InternalLink,
+    InternaLinkWrapper,
+    primaryBlueColor
 };
