@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import { device } from './mediaQueries';
 require('typeface-open-sans');
 
-const GlobalStyle = styled.body`
+const GlobalStyle = styled.div`
   font-family: open sans;
   padding: 0;
   margin: 0;
