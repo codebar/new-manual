@@ -11,7 +11,7 @@ This site is built with React CRA and uses the following libraries:
 - storybook
 - jest
 
-The build environment is made up of:
+It is deployed on Netlify and the build environment is made up of:
 
 - Prettier
 - Travis CI
