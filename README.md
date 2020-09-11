@@ -1,4 +1,5 @@
 # Codebar manual readme
+[![Build Status](https://travis-ci.org/codebar/new-manual.svg?branch=master)](https://travis-ci.org/codebar/new-manual)
 
 https://codebar-manual.netlify.app/
 
