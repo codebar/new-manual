@@ -21,8 +21,3 @@ The build environment is made up of:
 1. Download the folder and navigate to file in the terminal
 2. Enter `npm install` to download the project's dependencies
 3. Run `npm start` to run the project locally on your machine
-
-## Deploy locally
-
-Heroku account details: codebarlondon@gmail.com
-Password: welovecodeb@r8
