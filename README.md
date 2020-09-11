@@ -1,5 +1,7 @@
 # Codebar manual readme
 
+https://codebar-manual.netlify.app/
+
 ## Tech stack
 
 This site is built with React CRA and uses the following libraries:
