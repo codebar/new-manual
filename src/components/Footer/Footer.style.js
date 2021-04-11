@@ -1,15 +1,11 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const FooterWrapper = styled.footer`
   background-color: #3e4954;
-  min-height: 35vh;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 4rem 0 4rem;
-  margin: 0 -1rem 0 -1rem;
+  padding: 2rem 4rem;
   color: white;
-  bottom: 0;
   @media (max-width: 400px) {
     flex-direction: column;
     padding: 1rem;
@@ -56,10 +52,6 @@ const FooterSocials = styled.div`
     padding: 1rem 0;
   }
 `;
-const FooterTextLink = styled(Link)`
-  text-decoration: none;
-  color: white;
-`;
 
 const FooterImg = styled.img`
   width: 2.5rem;
@@ -79,5 +71,4 @@ export {
   FooterTextWrapper,
   FooterImg,
   FooterLink,
-  FooterTextLink
 };

@@ -2,7 +2,7 @@
 
 exports[`matches snapshot 1`] = `
 <footer
-  className="sc-AxjAm hSxGtj"
+  className="sc-AxjAm eAZDYz"
 >
   <div
     className="sc-AxiKw gGZwqz"
@@ -10,7 +10,7 @@ exports[`matches snapshot 1`] = `
     <p
       className="sc-AxhCb kqIPop"
     >
-      send us email at
+      Send us an email at
     </p>
     <a
       className="sc-AxirZ dxkyxw email"
@@ -33,45 +33,46 @@ exports[`matches snapshot 1`] = `
     className="sc-AxhUy hrqUPW"
   >
     <a
-      className="sc-Axmtr hBVTto"
+      className="sc-AxheI fniENP"
       href="https://slack.codebar.io/"
       target="_blank"
     >
       <img
-        className="sc-AxheI cunzYN"
+        alt="Slack logo"
+        className="sc-AxgMl deXZOn"
         src="slack-logo.svg"
       />
     </a>
     <a
-      className="sc-Axmtr hBVTto"
+      className="sc-AxheI fniENP"
       href="https://github.com/codebar"
       target="_blank"
     >
       <img
-        alt="github-logo"
-        className="sc-AxheI cunzYN"
+        alt="Github logo"
+        className="sc-AxgMl deXZOn"
         src="github-logo.svg"
       />
     </a>
     <a
-      className="sc-Axmtr hBVTto"
+      className="sc-AxheI fniENP"
       href="https://twitter.com/codebar"
       target="_blank"
     >
       <img
-        alt="twitter-logo"
-        className="sc-AxheI cunzYN"
+        alt="Twitter logo"
+        className="sc-AxgMl deXZOn"
         src="twitter-logo.svg"
       />
     </a>
     <a
-      className="sc-Axmtr hBVTto"
+      className="sc-AxheI fniENP"
       href="https://www.facebook.com/codebarHQ"
       target="_blank"
     >
       <img
-        alt="facebook-logo"
-        className="sc-AxheI cunzYN"
+        alt="Facebook logo"
+        className="sc-AxgMl deXZOn"
         src="facebook-logo.svg"
       />
     </a>
